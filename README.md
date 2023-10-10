@@ -399,3 +399,179 @@ Mohon dicatat bahwa terdapat dua versi dari Yarn: Yarn Classic dan Yarn Berry. L
 
 ### Composer
 
+#### Pendahuluan
+
+Composer merupakan alat manajemen dependensi yang digunakan dalam pengembangan perangkat lunak PHP. Dengan Composer, pengembang dapat mendeklarasikan perpustakaan atau library yang diperlukan oleh proyek mereka, dan Composer akan mengatur (menginstal/memperbarui) perpustakaan tersebut untuk mereka. Ini membantu pengembang untuk mengelola perpustakaan dan paket yang diperlukan oleh aplikasi dengan lebih efisien dan terstruktur. Berikut adalah poin-poin penting mengenai Composer:
+
+1. **Manajemen Dependensi**: Composer memungkinkan pengembang untuk mendeklarasikan dan mengelola dependensi atau perpustakaan yang diperlukan oleh proyek mereka dalam suatu format yang standar dan terstruktur.
+
+2. **Instalasi dan Pembaruan Perpustakaan**: Composer menyederhanakan proses instalasi dan pembaruan perpustakaan dengan otomatis mengelola dependensi tersebut, sehingga pengembang tidak perlu melakukan proses ini secara manual.
+
+3. **Komunitas PHP**: Composer dianggap sebagai manajer dependensi pilihan utama dalam komunitas PHP, membantu memudahkan penginstalan, pembaruan, dan penggunaan paket pihak ketiga. Paket-paket ini dapat dihosting oleh repositori publik maupun pribadi, dengan sebagian besar proyek populer mempublish ke Packagist, sebuah repositori paket PHP terkenal.
+
+4. **Integrasi dengan Framework Modern**: Composer digunakan di hampir semua framework PHP modern seperti Symfony, CakePHP, dan Laravel. Ini merupakan alat yang sangat direkomendasikan untuk mengatasi masalah fundamental dalam banyak proyek web.
+
+5. **Menyederhanakan Pengembangan**: Dengan menggunakan Composer, pengembang dapat fokus pada menulis kode untuk aplikasi mereka, sementara manajemen dependensi diurus oleh Composer, ini menciptakan proses pengembangan yang lebih efisien dan terorganisir.
+
+Composer bukanlah manajer paket dalam arti yang sama seperti Yum atau Apt, namun lebih difokuskan pada manajemen dependensi pada level aplikasi. Hal ini sangat penting untuk memahami peran dan manfaat Composer dalam ekosistem pengembangan PHP.
+
+### Referensi:
+- [getcomposer.org - Introduction](https://getcomposer.org/doc/00-intro.md)
+- [w3resource.com - A gentle introduction to composer as a dependency manager](https://www.w3resource.com/php/composer/a-gentle-introduction-to-composer-as-a-dependency-manager.php)
+- [howtogeek.com - How to Install and Use Composer, PHP's Dependency Manager](https://www.howtogeek.com/662594/how-to-install-and-use-composer-phps-dependency-manager/)
+- [udemy.com - Composer - The Ultimate Guide for PHP Dependency Management](https://www.udemy.com/course/composer-php-dependency-manager/)
+
+
+### Cara Kerja Composer
+
+1. **Definisi Dependensi**:
+   - Semua dependensi proyek Anda didefinisikan dalam file `composer.json` yang terletak di direktori teratas proyek Anda.
+   - Di dalam file `composer.json`, Anda perlu menentukan key `require` untuk mencantumkan paket-paket yang dibutuhkan oleh proyek Anda, bersama dengan versi yang diinginkan.
+
+2. **Mencari dan Mengunduh Dependensi**:
+   - Composer akan mencari paket-paket yang didefinisikan dalam file `composer.json` di repositori yang telah diatur.
+   - Repositori default adalah Packagist.org, tetapi Anda juga dapat menentukan repositori lainnya.
+   - Composer kemudian menggunakan informasi versi dari VCS (Sistem Kontrol Versi) paket untuk menemukan versi paket yang paling cocok dengan keterbatasan versi yang Anda tentukan dalam file `composer.json`.
+
+3. **Menyelesaikan Dependensi**:
+   - Composer menyelesaikan semua dependensi yang terdaftar dalam file `composer.json` dan menuliskan semua paket dan versi tepat mereka ke dalam file `composer.lock`.
+   - Hal ini memastikan bahwa semua orang yang bekerja pada proyek ini terkunci pada versi dependensi yang sama.
+
+4. **Menginstal Dependensi**:
+   - Setelah dependensi diselesaikan, Composer kemudian mengunduh file-file dependensi ke dalam direktori `vendor` di proyek Anda.
+   - Direktori `vendor` adalah lokasi konvensional untuk semua kode pihak ketiga dalam proyek.
+
+5. **Penguncian Versi**:
+   - File `composer.lock` memastikan bahwa semua pengembang dalam tim, server CI, mesin produksi, dll., menggunakan versi yang sama dari dependensi, yang mengurangi potensi bug yang mempengaruhi hanya beberapa bagian dari penyebaran.
+   - Hal ini juga memungkinkan Anda untuk merasa percaya diri bahwa dependensi yang diinstal masih berfungsi bahkan jika banyak versi baru dari dependensi tersebut telah dirilis sejak file `composer.lock` dibuat.
+
+6. **Pembaruan Dependensi**:
+   - Untuk memperbarui dependensi, Anda dapat menjalankan perintah `update` yang akan menyelesaikan dependensi lagi dan memperbarui file `composer.lock` dengan versi terbaru yang sesuai dengan batasan versi dalam file `composer.json`.
+
+Dengan demikian, Composer memudahkan pengelolaan dependensi dalam proyek PHP, memastikan konsistensi antar lingkungan, dan memudahkan integrasi dan pengujian kode.
+
+Referensi:
+- [Dokumentasi Resmi Composer](https://getcomposer.org/doc/01-basic-usage.md)
+
+#### Command Composer
+
+##### 1. `composer init`
+
+- Menginisialisasi paket Composer baru di direktori saat ini dan meminta detail paket seperti nama, deskripsi, penulis, dan dependensi.
+
+##### 2. `composer install` atau `composer i`
+
+- Mengunduh dan menginstal semua pustaka dan dependensi yang diuraikan dalam file composer.lock. Jika file tidak ada, akan mencari composer.json dan melakukan hal yang sama, sekaligus membuat file composer.lock.
+
+##### 3. `composer update` atau `composer u` atau `composer upgrade`
+
+- Memperbarui dependensi pustaka ke versi terbaru yang sesuai dengan batasan yang ditentukan dalam file composer.json.
+
+##### 4. `composer require` atau `composer r`
+
+- Menambahkan paket baru ke file composer.json dan mengunduhnya.
+
+##### 5. `composer remove` atau `composer rm`
+
+- Menghapus paket dari file composer.json dan juga menghapusnya dari direktori vendor.
+
+##### 6. `composer dump-autoload` atau `composer dumpautoload`
+
+- Mengoptimalkan muatan otomatis dengan meregenerasi file autoload yang diperlukan.
+
+##### 7. `composer self-update` atau `composer selfupdate`
+
+- Memperbarui Composer itu sendiri ke versi terbaru.
+
+##### 8. `composer create-project`
+
+- Membuat proyek baru berdasarkan paket yang ada.
+
+##### 9. `composer validate`
+
+- Memvalidasi file composer.json dan composer.lock.
+
+##### 10. `composer run-script` atau `composer run`
+
+- Menjalankan skrip yang ditentukan dalam file composer.json.
+
+##### 11. `composer search`
+
+- Mencari paket di Packagist yang sesuai dengan kata kunci yang diberikan.
+
+##### 12. `composer show` atau `composer info`
+
+- Menampilkan informasi tentang paket yang diinstal atau paket yang tersedia.
+
+Dan masih banyak lagi perintah lainnya yang dapat Anda temukan dalam dokumentasi resmi Composer. Untuk melihat daftar lengkap perintah yang tersedia, Anda dapat menjalankan `composer` atau `composer list` di antarmuka baris perintah, kemudian `--help` dikombinasikan dengan salah satu dari perintah tersebut dapat memberikan informasi lebih lanjut. Sebagai tambahan, Composer menggunakan `symfony/console` sehingga Anda dapat memanggil perintah dengan nama singkat jika tidak ambigu.
+
+Referensi:
+
+- [DevOpsSchool - Composer User Guide & Commands](https://www.devopsschool.com/blog/what-is-composer-and-its-user-guide-commands/)
+- [Devhints.io - Composer Cheatsheet](https://devhints.io/composer)
+- [Thomas Venturini - The Most Common Composer Commands](https://thomasventurini.com/articles/the-most-common-composer-commands)
+- [Composer - Command-line interface / Commands](https://getcomposer.org/doc/03-cli.md)
+
+
+#### Menginstall Composer
+
+#### 1. Menginstal Composer di Shared Hosting, Linux, atau macOS:
+
+Langkah-langkah berikut digunakan untuk menginstal Composer di akun hosting bersama, Linux (PC atau sistem berbasis server), dan macOS:
+
+1. Hubungkan ke akun hosting Anda menggunakan koneksi SSH (hanya berlaku untuk hosting bersama dan cloud). Jika tidak, buka jendela terminal di Linux atau macOS.
+2. Unduh Composer dari situs web resmi dengan perintah berikut:
+```bash
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+```
+Pastikan PHP telah terinstal sebelumnya jika Anda menggunakan macOS atau Linux.
+
+3. Verifikasi tanda tangan installer (SHA-384) untuk memastikan file installer tidak korup:
+```bash
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+```
+Ambil perintah SHA-384 terbaru dari [halaman unduhan Composer](https://getcomposer.org/download/).
+
+4. Setelah verifikasi, instal Composer secara lokal atau global:
+   - Instalasi Lokal:
+   ```bash
+   php composer-setup.php
+   ```
+   - Instalasi Global:
+   ```bash
+   php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+   ```
+5. Setelah proses instalasi selesai, hapus installer:
+```bash
+php -r "unlink('composer-setup.php');"
+```
+6. Akhirnya, uji instalasi Composer:
+```bash
+composer
+```
+
+#### 2. Menginstal Composer di Windows:
+
+1. Instal PHP di komputer Anda. Kami merekomendasikan menggunakan [XAMPP](https://www.apachefriends.org/index.html) karena prosesnya sederhana dan dapat diselesaikan dalam beberapa menit.
+2. Setelah XAMPP terinstal, unduh [versi terbaru Composer](https://getcomposer.org/download/).
+3. Jalankan wizard setup Composer. Ketika ditanya untuk mengaktifkan mode pengembang, abaikan dan lanjutkan dengan installer.
+4. Sebuah jendela akan muncul dan meminta Anda untuk menemukan baris perintah PHP. Lokasi default adalah `C:/xampp/php/php.exe`. Setelah lokasi dipilih, klik Next.
+5. Anda akan diminta dengan jendela Pengaturan Proxy. Biarkan kotak tidak dicentang dan lewati bagian ini dengan menekan Next. Kemudian, pada jendela terakhir, klik Install.
+6. Setelah menyelesaikan instalasi, buka Command Prompt. Tekan pintasan CTRL + R, dan ketik cmd. Klik OK.
+7. Gunakan perintah berikut dan tekan Enter:
+```bash
+composer
+```
+Perintah di atas akan mengembalikan hasil berikut:
+```plaintext
+______
+/ ____/___ ____ ___ ____ ____ ________ _____
+/ / / __ / __ `__ / __ / __ / ___/ _ / ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ (__ ) __/ /
+____/____/_/ /_/ /_/ .___/____/____/___/_/
+/_/
+Composer version 2.4.2 2022-09-14 16:11:15
+```
+
+Referensi:
+- [Hostinger Guide](https://www.hostinger.com/tutorials/how-to-install-composer)
