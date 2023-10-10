@@ -183,3 +183,219 @@ perintah yang ada sampai selesai.
 
 #### Referensi
 - [Apa Itu NPM (Node Package Manager)?](https://www.dewaweb.com/blog/apa-itu-npm/)
+
+### Yarn
+
+#### Pendahuluan
+
+Yarn adalah manajer paket yang cepat, andal, dan aman yang dapat digunakan untuk mengelola dependensi di proyek kode Anda. Ini dirancang untuk membantu pengembang mengelola dan mengautomasi pengelolaan dependensi perangkat lunak dengan efisien, sehingga memungkinkan fokus pada penulisan kode yang sebenarnya untuk aplikasi mereka. Yarn memastikan bahwa versi dependensi yang diinstal di lingkungan pengembangan lokal Anda sesuai dengan yang diinstal di lingkungan produksi, sehingga mengurangi "itu bekerja di mesin saya" masalah.
+
+Beberapa alasan mengapa Yarn populer di kalangan pengembang antara lain:
+
+- **Kecepatan**: Yarn menawarkan kecepatan instalasi paket yang lebih cepat dibandingkan dengan npm (Node Package Manager) karena mengoptimalkan proses pengunduhan dan mengurangi waktu tunggu.
+- **Keandalan**: Dengan lockfile yang dihasilkan (yarn.lock), Yarn memastikan bahwa struktur node_modules dan versi paket yang diinstal adalah konsisten di semua lingkungan.
+- **Keamanan**: Yarn memiliki mekanisme keamanan yang kuat untuk memastikan integritas paket yang diinstal, dan menawarkan resolusi konflik otomatis yang dapat membantu menghindari dependensi yang konflik atau cacat.
+  
+Yarn dikembangkan oleh Facebook, Google, Exponent, dan Tilde. Sejak peluncurannya, Yarn telah menjadi pilihan populer di kalangan pengembang karena peningkatan kinerja dan fitur-fitur andal yang ditawarkannya.
+
+#### Referensi:
+
+- [npm vs Yarn: Which Package Manager Should You Choose?](https://www.keycdn.com/blog/npm-vs-yarn) 
+- [Yarn vs npm - Best Package Manager 2021](https://buttercms.com/blog/yarn-vs-npm-best-package-manager-2021)
+- [Yarn Package Manager: An Improvement over npm](https://auth0.com/blog/yarn-package-manager-an-improvement-over-npm/)
+- [What is Yarn? Yarn vs Npm](https://www.educative.io/edpresso/what-is-yarn-yarn-vs-npm)
+
+#### Cara Kerja Yarn
+
+Yarn adalah sebuah manajer dependensi yang cepat, dapat diandalkan, dan aman yang dirancang untuk menangani paket dependensi di proyek-proyek perangkat lunak. Berikut adalah beberapa aspek utama dari cara kerja Yarn:
+
+1. **Mengelola Dependensi:**
+   - Yarn memungkinkan pengembang untuk menginstal, mengupdate, dan menghapus dependensi proyek dengan mudah melalui command-line interface (CLI) yang sederhana.
+   - Dependensi yang dideklarasikan dalam berkas `package.json` dan berkas kunci `yarn.lock` yang menjamin konsistensi dependensi di seluruh lingkungan dan tim pengembangan.
+
+2. **Caching:**
+   - Yarn mencache setiap paket yang telah diunduh, sehingga tidak perlu mengunduh paket yang sama lagi di masa mendatang. Ini berarti instalasi yang lebih cepat bahkan pada instalasi ulang atau di mesin lain yang memiliki cache yang sama【280†(npm)】.
+
+3. **Resolusi Versi:**
+   - Yarn memiliki algoritma resolusi yang kuat yang bekerja untuk menyelesaikan konflik versi dependensi dan memastikan versi yang benar dari setiap paket diinstal di proyek Anda.
+
+4. **Integritas Proyek:**
+   - Yarn menggunakan berkas kunci (`yarn.lock`) untuk mengunci versi dependensi proyek, memastikan bahwa setiap anggota tim memiliki konsistensi versi paket, terlepas dari kapan mereka menginstalnya.
+
+5. **Keamanan:**
+   - Yarn memiliki fitur untuk mengecek dan melaporkan kelemahan keamanan potensial dalam proyek Anda.
+
+6. **Performa:**
+   - Yarn dilakukan hampir semuanya secara bersamaan untuk memaksimalkan penggunaan sumber daya, yang berarti instalasi yang bahkan lebih cepat.
+
+7. **Workspaces:**
+   - Yarn mendukung workspaces yang memungkinkan pengembang untuk mengelola dependensi monorepo dengan lebih baik, memungkinkan sharing code dan dependensi antar proyek dengan lebih efisien.
+
+8. **Plug 'n' Play (PnP):**
+   - Yarn memperkenalkan konsep Plug 'n' Play yang menghilangkan tahap `node_modules` dan memungkinkan penggunaan langsung dependensi tanpa tahap instalasi tradisional.
+
+#### Referensi:
+
+- [npm - Yarn](https://www.npmjs.com/package/yarn)
+- [Official Yarn Documentation](https://yarnpkg.com/)
+- [Wikipedia - Yarn (package manager)](https://en.wikipedia.org/wiki/Yarn_(package_manager))
+- [State of JavaScript - Yarn](https://2022.stateofjs.com/en-US/technologies/package-managers/)
+- [Yarn - Official Architecture Overview](https://yarnpkg.com/advanced/architecture)
+
+#### Command Yarn
+1. **Menambahkan Dependensi**: 
+   - `yarn add [package]`: Perintah ini digunakan untuk menambahkan sebuah paket sebagai dependensi ke dalam proyek Anda.
+   - `yarn add [package]@[version]`: Menambahkan versi spesifik dari sebuah paket.
+   - `yarn add --dev [package]`: Menambahkan paket sebagai dependensi pengembangan.
+   - `yarn add --peer [package]`: Menambahkan paket sebagai dependensi sejawat.
+   - `yarn add --optional [package]`: Menambahkan paket sebagai dependensi opsional.
+
+2. **Meningkatkan Versi Dependensi**:
+   - `yarn upgrade [package]`: Meningkatkan versi paket ke versi terbaru.
+   - `yarn upgrade [package]@[version]`: Meningkatkan versi paket ke versi spesifik.
+
+3. **Menghapus Dependensi**:
+   - `yarn remove [package]`: Menghapus paket dari daftar dependensi proyek Anda.
+
+4. **Memasang Dependensi**:
+   - `yarn install`: Memasang semua dependensi yang terdaftar di file `package.json`.
+
+5. **Menjalankan Skrip**:
+   - `yarn run [script]`: Menjalankan skrip yang ditentukan di file `package.json`.
+
+6. **Inisialisasi Proyek Baru**:
+   - `yarn init`: Membuat file `package.json` baru untuk proyek Anda.
+
+7. **Mengecek Versi Yarn**:
+   - `yarn --version`: Menampilkan versi Yarn yang saat ini terpasang.
+
+8. **Mengunci Versi Dependensi**:
+   - `yarn lock`: Membuat atau memperbarui file `yarn.lock` untuk mengunci versi dependensi.
+
+9. **Menjalankan Server Lokal**:
+   - `yarn start`: Menjalankan server lokal untuk proyek Anda.
+
+10. **Membuat Build Produksi**:
+    - `yarn build`: Membuat build produksi dari proyek Anda.
+
+11. **Menjalankan Tes**:
+    - `yarn test`: Menjalankan tes di proyek Anda.
+
+12. **Menjalankan Pemeriksaan Format dan Lint**:
+    - `yarn lint`: Menjalankan pemeriksaan format dan lint pada kode sumber proyek Anda.
+
+Perintah-perintah di atas merupakan sebagian dari perintah yang tersedia di Yarn. Setiap perintah memiliki opsi dan flag tambahan yang dapat digunakan untuk mengatur perilakunya. Untuk informasi lebih lanjut tentang perintah Yarn, Anda dapat mengunjungi dokumentasi resmi Yarn.
+
+#### Referensi:
+- [Yarn Commands (Official Documentation)](https://classic.yarnpkg.com/en/docs/cli/)
+- [Yarn Command Cheat Sheet](https://devhints.io/yarn)
+- [Managing dependencies with Yarn](https://classic.yarnpkg.com/en/docs/managing-dependencies/)
+
+### Cara Install Yarn
+
+Sebelum Anda mulai menggunakan Yarn, Anda perlu menginstalnya pada sistem Anda. Berikut ini adalah beberapa metode instalasi Yarn:
+
+#### Melalui npm (Node Package Manager)
+
+Direkomendasikan untuk menginstal Yarn melalui npm yang merupakan bagian dari instalasi Node.js. Setelah Node.js dan npm terinstal, jalankan perintah berikut untuk menginstal dan memperbarui Yarn:
+
+```bash
+npm install --global yarn
+```
+
+#### Melalui Paket Manager Sistem Operasi
+
+Yarn juga dapat diinstal melalui manajer paket dari sistem operasi yang Anda gunakan. Berikut adalah beberapa contoh:
+
+- Pada Alpine Linux (3.6+), gunakan perintah:
+```bash
+apk add yarn
+```
+
+- Pada sistem operasi berbasis Debian seperti Ubuntu, gunakan perintah:
+```bash
+sudo apt-get update && sudo apt-get install yarn
+```
+
+- Pada sistem operasi berbasis Red Hat seperti Fedora, gunakan perintah:
+```bash
+sudo dnf install yarn
+```
+
+#### Melalui Skrip Instalasi
+
+Yarn menyediakan skrip instalasi yang dapat dijalankan di terminal untuk menginstal Yarn pada sistem macOS dan Unix umum:
+
+```bash
+curl -o- -L https://yarnpkg.com/install.sh | bash
+```
+
+Untuk menginstal versi tertentu dari Yarn, gunakan perintah berikut dan gantikan `[version]` dengan nomor versi Yarn yang diinginkan:
+
+```bash
+curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version [version]
+```
+
+#### Melalui Tarball
+
+Yarn dapat diinstal dengan mengunduh tarball dan mengekstraknya di mana saja pada sistem Anda:
+
+```bash
+cd /opt
+wget https://yarnpkg.com/latest.tar.gz
+tar zvxf latest.tar.gz
+# Yarn is now in /opt/yarn-[version]/
+```
+
+Sebelum mengekstrak Yarn, disarankan untuk memverifikasi tarball menggunakan GPG:
+
+```bash
+wget -qO- https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --import
+wget https://yarnpkg.com/latest.tar.gz.asc
+gpg --verify latest.tar.gz.asc
+# Look for "Good signature from 'Yarn Packaging'" in the output
+```
+
+#### Konfigurasi Path
+
+Jika Yarn tidak ditemukan dalam PATH Anda, ikuti langkah-langkah berikut untuk menambahkannya sehingga dapat dijalankan dari mana saja:
+
+1. Tambahkan ini ke profil Anda: `export PATH="$PATH:/opt/yarn-[version]/bin"` (path mungkin berbeda tergantung di mana Anda mengekstrak Yarn)
+2. Di terminal, log in dan log out untuk menerapkan perubahan
+
+Untuk mengakses eksekutabel Yarn secara global, Anda perlu mengatur variabel lingkungan `PATH` di terminal Anda. Untuk melakukan ini, tambahkan `export PATH="$PATH:`yarn global bin`"` ke profil Anda, atau jika Anda menggunakan shell Fish, jalankan perintah `set -U fish_user_paths (yarn global bin) $fish_user_paths`.
+
+#### Referensi:
+- [Dokumentasi Resmi Yarn](https://classic.yarnpkg.com/en/docs/install)
+- [Panduan Instalasi Yarn di Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
+- [Panduan Instalasi Yarn di Linode](https://www.linode.com/docs/guides/how-to-install-yarn-on-ubuntu-and-debian/)
+- [Panduan Instalasi Yarn di Hostinger](https://www.hostinger.com/tutorials/how-to-install-node-js-ubuntu)
+- [Panduan Instalasi Yarn di Github](https://github.com/yarnpkg/yarn)
+
+
+#### Cara Install Yarn
+
+Berikut adalah panduan untuk menginstal Yarn pada berbagai sistem operasi:
+
+### Di Windows:
+1. Unduh [installer Yarn](https://classic.yarnpkg.com/latest.msi).
+2. Jalankan file yang telah diunduh dan ikuti petunjuk pada layar untuk menyelesaikan instalasi.
+
+### Di macOS:
+1. Gunakan Homebrew, sebuah manajer paket untuk sistem operasi macOS. Buka terminal dan ketik perintah berikut:
+   ```bash
+   brew install yarn
+   ```
+   Atau anda dapat mengunduh installer dari [situs resmi Yarn](https://classic.yarnpkg.com/en/docs/install/#mac-stable).
+
+### Di Linux:
+Untuk Linux, anda dapat melihat [dokumentasi resmi Yarn](https://classic.yarnpkg.com/en/docs/install/#debian-stable) untuk petunjuk instalasi pada distribusi Linux yang berbeda.
+
+Mohon dicatat bahwa terdapat dua versi dari Yarn: Yarn Classic dan Yarn Berry. Link di atas adalah untuk Yarn Classic. Jika anda ingin menggunakan Yarn Berry, anda dapat mengikuti panduan instalasi dari [situs resmi Yarn Berry](https://yarnpkg.com/getting-started/install).
+
+#### Referensi:
+- [Installasi Yarn di macOS](https://tecadmin.net/install-yarn-macos/)【293†source】
+- [Dokumentasi Resmi Yarn](https://classic.yarnpkg.com/en/docs/install)
+
+### Composer
+
