@@ -5,6 +5,50 @@
 ### GitHub
 GitHub adalah platform populer untuk pengembangan perangkat lunak yang memungkinkan pengguna untuk menyimpan kode pada penyimpanan berbasis cloud, melacak setiap perubahan yang ada pada kode, dan berkolaborasi dalam proyek. GitHub memungkinkan pengguna untuk mengunggah file dan membuat repository sendiri atau bergabung dengan repository proyek open source. Repository ini seperti sebuah folder pada komputer, namun memerlukan izin akses dari pemiliknya untuk dapat membuka, mengedit, atau menghapus setiap file yang ada pada dalamnya. GitHub juga berguna untuk menambah relasi atau jaringan, berkolaborasi, dan mempromosikan pekerjaan para pengembang. GitHub telah memperoleh jutaan pengguna dan menjadi platform go-to untuk proyek perangkat lunak yang kolaboratif sejak berdiri pada tahun 2008.
 
+### Gitlab
+#### Pengertian GitLab
+
+GitLab adalah solusi hosting Git populer dan open source yang diimplementasikan oleh lebih dari 50.000 organisasi. Selama beberapa tahun terakhir, GitLab telah berkembang dengan dukungan komunitas yang kuat, mampu menangani ribuan pengguna pada server tunggal dan beberapa server dalam kluster aktif. GitLab juga didefinisikan sebagai repositori kode open source dan platform pengembangan perangkat lunak kolaboratif untuk proyek DevOps dan DevSecOps besar. GitLab menawarkan lokasi untuk penyimpanan kode online dan kemampuan untuk pelacakan masalah dan integrasi Continuous Integration/Continuous Deployment (CI/CD).
+
+#### Kegunaan GitLab
+
+GitLab membantu tim pengembangan dan pengembang dalam menangani seluruh siklus hidup aplikasi mereka secara menyeluruh. Ini memungkinkan penyebaran aplikasi ke berbagai jenis lingkungan, melindungi proses build dan sumber kode aplikasi dari ancaman keamanan. Beberapa fitur utama dari GitLab mencakup pipa CI/CD yang kuat, registry bawaan yang dapat diimplementasikan secara instan tanpa konfigurasi, integrasi sempurna dengan Kubernetes, dan kemampuan untuk mengimpor proyek besar serta mengekspor kode lain dalam proyek.
+
+#### Kelebihan dan Kekurangan GitLab
+
+- **Kelebihan**:
+  - Mudah diatur.
+  - Antarmuka pengguna dan alat yang ramah pengguna.
+  - Memungkinkan sejumlah tak terbatas repositori pribadi gratis.
+  - Dapat mengintegrasikan banyak API dan layanan pihak ketiga.
+  - Uptime yang sangat dapat diandalkan.
+- **Kekurangan**:
+  - Antarmuka pengguna dapat sedikit rumit untuk ditinjau.
+  - Alat ini memiliki beberapa bug yang dapat membuatnya sedikit ceroboh.
+
+#### Cara Menggunakan GitLab
+
+1. **Inisialisasi Repositori**:
+   - Saat repositori diinisialisasi, folder tertentu dibuat dengan beberapa direktori dan konfigurasi.
+2. **Membuat File Notepad**:
+   - Buat file notepad untuk repositori dengan menggunakan perintah `touch input.txt` dan `notepad input.txt`.
+3. **Menyimpan dan Menutup Notepad**:
+   - Ketik apa saja di dalam notepad, lalu simpan dan tutup.
+4. **Mengecek Status File**:
+   - Gunakan perintah `git status` untuk memeriksa status file.
+5. **Menambahkan File ke Area Staging**:
+   - Gunakan perintah `git add.` untuk menambahkan file ke area staging.
+6. **Commit File**:
+   - Gunakan perintah `git commit -m "input"` untuk commit file.
+7. **Mengecek Status File (lagi)**:
+   - Gunakan perintah `git status` untuk memeriksa status file lagi.
+8. **Mendorong Notepad ke Repositori GitLab**:
+   - Pergi ke GitLab Anda dan salin perintah `git remote origin`, lalu kembali ke Git Bash dan tempel perintah tersebut.
+   - Gunakan perintah `git remote -v`, diikuti oleh `git push -u origin master` untuk mendorong file ke repositori remote.
+   - Sekarang periksa GitLab Anda untuk melihat apakah ada penambahan pada proyek baru yang awalnya Anda buat.
+
+
+
 ### Bitbucket
 
 Bitbucket Cloud adalah hosting kode dan alat kolaborasi berbasis Git, yang dibuat untuk tim. Integrasi Jira dan Trello Bitbucket yang terbaik di kelasnya dirancang untuk menyatukan seluruh tim perangkat lunak untuk menjalankan sebuah proyek. Kami menyediakan satu tempat bagi tim Anda untuk berkolaborasi dalam kode dari konsep hingga Cloud, membangun kode berkualitas melalui pengujian otomatis, dan menerapkan kode dengan percaya diri.
