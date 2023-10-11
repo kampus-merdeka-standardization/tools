@@ -130,6 +130,19 @@ Bitbucket Cloud adalah hosting kode dan alat kolaborasi berbasis Git, yang dibua
 
     sebuah platform yang mengintegrasikan alat-alat Atlassian dan mitra untuk membangun dan mengoperasikan perangkat lunak dengan mudah. Tim dapat memilih alat-alat yang mereka inginkan atau membawa alat-alat yang sudah ada.
 
+### Perbandingan
+
+| Komponen        | Github | Gitlab | Bitbucket |
+|-----------------|--------|--------|-----------|
+| Maintenance     | 4      | 4      | 4         |
+| Reputable       | 4      | 4      | 4         |
+| Compatibility   | 4      | 4      | 4         |
+| Community       | 4      | 4      | 3         |
+| Documentation   | 4      | 4      | 3         |
+| Licensing       | 4      | 4      | 4         |
+| Extensible      | 3      | 3      | 4         |
+| Size            | 3      | 4      | 4         |
+| **Total Score** | 30     | 31     | 30        |
 
 ## Artifact
 
@@ -249,6 +262,20 @@ Docker Hub merupakan repositori _image_ _container_ terbesar di dunia dengan ber
 6. [Melaksanakan audit domain](https://docs.docker.com/docker-hub/domain-audit/)
 7. [Gunakan Manajemen Akses _Image_](https://docs.docker.com/docker-hub/image-access-management/) untuk mengontrol akses pengembang ke jenis gambar tertentu
 8. [Mengaktifkan Manajemen Akses Registri](https://docs.docker.com/desktop/hardened-desktop/registry-access-management/)
+
+### Perbandingan
+
+| Komponen        | JFrog | AWS CodeArtifact | Docker Hub |
+|-----------------|-------|------------------|------------|
+| Maintenance     | 4     | 4                | 4          |
+| Reputable       | 4     | 4                | 4          |
+| Compatibility   | 4     | 4                | 4          |
+| Community       | 4     | 3                | 3          |
+| Documentation   | 4     | 4                | 3          |
+| Licensing       | 4     | 3                | 4          |
+| Extensible      | 3     | 3                | 4          |
+| Size            | 4     | 4                | 4          |
+| **Total Score** | 31    | 29               | 30         |
 
 ## Dependency Manager
 
