@@ -2,6 +2,91 @@
 
 ## Repo
 
+### GitHub
+GitHub adalah platform populer untuk pengembangan perangkat lunak yang memungkinkan pengguna untuk menyimpan kode pada penyimpanan berbasis cloud, melacak setiap perubahan yang ada pada kode, dan berkolaborasi dalam proyek. GitHub memungkinkan pengguna untuk mengunggah file dan membuat repository sendiri atau bergabung dengan repository proyek open source. Repository ini seperti sebuah folder pada komputer, namun memerlukan izin akses dari pemiliknya untuk dapat membuka, mengedit, atau menghapus setiap file yang ada pada dalamnya. GitHub juga berguna untuk menambah relasi atau jaringan, berkolaborasi, dan mempromosikan pekerjaan para pengembang. GitHub telah memperoleh jutaan pengguna dan menjadi platform go-to untuk proyek perangkat lunak yang kolaboratif sejak berdiri pada tahun 2008.
+
+### Bitbucket
+
+Bitbucket Cloud adalah hosting kode dan alat kolaborasi berbasis Git, yang dibuat untuk tim. Integrasi Jira dan Trello Bitbucket yang terbaik di kelasnya dirancang untuk menyatukan seluruh tim perangkat lunak untuk menjalankan sebuah proyek. Kami menyediakan satu tempat bagi tim Anda untuk berkolaborasi dalam kode dari konsep hingga Cloud, membangun kode berkualitas melalui pengujian otomatis, dan menerapkan kode dengan percaya diri.
+
+##### Why Bitbucket ?
+###### Features 
+1. [CI/CD](https://bitbucket.org/product/features/pipelines)
+
+   - Bitbucket Pipelines: Alat CI/CD yang terintegrasi dengan Bitbucket Cloud, yang memungkinkan tim untuk membangun, menguji, dan menyebarkan kode mereka di Bitbucket12.
+
+   - Keunggulan Bitbucket Pipelines: Tidak perlu mengatur server, menyinkronkan repositori, atau mengonfigurasi manajemen pengguna. Cukup gunakan template berbasis bahasa untuk membuat konfigurasi CI/CD dalam dua langkah.
+   - Fitur Bitbucket Pipelines: Dukungan untuk berbagai bahasa dan platform, konfigurasi sebagai kode dengan file bitbucket-pipelines.yml, penyesuaian dengan struktur cabang, integrasi dengan Jira dan Confluence, dan penggunaan Bitbucket Pipes untuk membuat alur kerja otomatis yang kuat.
+
+   - Model harga Bitbucket Pipelines: Berdasarkan penggunaan, dengan konkurensi tak terbatas. Memberikan visibilitas yang tak tertandingi ke status build dan deployment di dalam Bitbucket dan Jira.
+
+2. [Cloud Security](https://bitbucket.org/product/cloud-security)
+
+   - **Keamanan data di Atlassian Cloud**: data aman di Atlassian Cloud, yang mencakup pengaturan keamanan seperti IP yang ditentukan sebelumnya, autentikasi dua faktor, dan kunci keamanan FIDO U2F.
+
+   - **Koneksi SAML SSO**: dapat menambahkan Atlassian Access untuk menghubungkan produk cloud Anda dengan penyedia SAML SSO Anda.
+
+   - **Enkripsi data**: menjamin bahwa repositori Anda dienkripsi saat diam (AES-256) dan saat transit (TLS 1.2+), sehingga kode Anda selalu aman.
+
+   - **Standar kepercayaan**: komitmen Atlassian untuk memberikan tingkat tertinggi keamanan, keandalan, privasi, dan kepatuhan dalam produk-produknya. Halaman ini juga mengarahkan Anda ke Atlassian Trust Center, yang merupakan sumber informasi tentang semua kebutuhan keamanan Anda.
+
+   - **Perlindungan GDPR**: Atlassian sepenuhnya berinvestasi dalam kesuksesan pelanggan dan perlindungan data. Menyediakan _Data Processing Addendum_ (DPA) yang telah ditandatangani sebelumnya, untuk membantu Anda memenuhi persyaratan transfer lanjutan di bawah GDPR.
+
+   - **Program Bug Bounty**: Atlassian telah bermitra dengan Bugcrowd untuk memberi imbalan atas penelitian kerentanan yang unik. Anda dapat mengirimkan laporan melalui program Bug Bounty jika Anda menemukan kerentanan.
+
+3. [DevSecOps](https://www.atlassian.com/software/bitbucket/features/devsecops)
+
+   - **Keamanan pengembangan**: Membuat keamanan menjadi bagian dari siklus pengembangan Anda dengan menggunakan integrasi Snyk untuk Bitbucket Cloud.
+
+   - **Pemindaian kode**: Memindai kode Anda saat di-push ke pull request, sehingga Anda dapat memperbaiki masalah secepatnya dan sepanjang proses review kode Anda.
+
+   - **Laporan keamanan**: melihat laporan, anotasi, dan metrik keamanan di pull request Anda dengan menggunakan fitur code insights.
+
+   - **Dasbor keamanan**: Mendapatkan visibilitas tentang keamanan repositori Anda dengan menggunakan dasbor khusus. Lihat insight keamanan dan jumlah total kerentanan di repositori ini, yang dikelompokkan berdasarkan skor risiko rendah, sedang, dan tinggi.
+
+   - **Konfigurasi sederhana**: Memindai dependensi untuk kerentanan secara otomatis dengan menambahkan beberapa baris konfigurasi ke bitbucket-pipelines.yml Anda.
+
+4. [Code Review](https://bitbucket.org/product/features/code-review)
+
+   - **_Interface_ berbasis kode**: Sebuah antarmuka yang memungkinkan Anda menemukan bug lebih cepat, berkolaborasi dengan mudah, dan menggabungkan kode dengan percaya diri.
+
+   - **Fitur-fitur baru**: Sebuah tampilan samping-samping yang diperbarui dengan fitur komentar kontekstual dan manajemen tugas membuat peninjauan diff besar lebih intuitif.
+
+   - **Integrasi hasil tes dan pemindaian keamanan**: Hasil tes dan pemindaian keamanan diintegrasikan dalam tampilan permintaan tarik Anda, sehingga Anda mendapat peringatan tentang bug potensial sebelum Anda mengirimkan kode.
+
+   - **Kondisi penggabungan**: Daftar kondisi untuk ditinjau oleh reviewer sebelum menyetujui, sehingga permintaan tarik secara konsisten diverifikasi sebelum digabungkan.
+
+   - **Tampilan satu halaman**: Tidak ada tab dan tidak ada pergantian konteks. Semua yang perlu Anda ketahui ditampilkan di sebelah kanan kode di sidebar kanan.
+
+   - **Rencana premium**: Rencana premium memungkinkan Anda menegakkan pemeriksaan penggabungan, yaitu, sampai kondisi penggabungan terpenuhi, PR tidak akan digabungkan.
+
+   - **Konversi umpan balik menjadi tugas**: Ubah umpan balik Anda menjadi tugas yang dapat ditindaklanjuti dengan menangkap item tindak lanjut di daftar to-do.
+
+   - **Navigasi pohon file**: Memiliki banyak perubahan di beberapa file? Navigasi pohon file Bitbucket Cloud memudahkan Anda menemukan apa yang Anda cari.
+
+   - **Code Insights**: Code Insights, didukung oleh vendor DevOps terbaik, menampilkan hasil tes, pemindaian keamanan, dan lainnya langsung di tampilan permintaan tarik Anda1. Memperbaiki bug sebelum Anda mengirimkan kode berarti menghemat waktu untuk rapat insiden. Pelajari lebih lanjut
+
+   - **Komentar dan diff dalam konteks kode**: Persempit lingkaran umpan balik antara pengirim dan peninjau dengan melihat komentar dan diff langsung dalam konteks kode. Kemudian, tetapkan tugas atau buat masalah Jira langsung dari dalam permintaan tarik Anda.
+
+###### Integration
+1. [Jira Integration](https://www.atlassian.com/software/jira/bitbucket-integration)
+
+    Menghubungkan dan mengotomatisasi proses antara Bitbucket dan Jira, sehingga tim dapat melihat status pengembangan, kode, dan penyebaran dalam satu tempat. <br>
+    beberapa fitur diantaranya :
+
+    - Melihat dan membuat cabang dan _pull request_ dari panel pengembangan Jira
+    - Melihat dan mengedit tiket Jira dari dalam UI Bitbucket
+    - Membuat aturan otomatisasi berdasarkan pemicu seperti komit atau permintaan tarik
+    - Melihat isu-isu Jira yang ditugaskan kepada Anda dari dalam Bitbucket
+    - Membuat tiket Jira langsung dari dalam komentar permintaan tarik
+    - Melihat dan berinteraksi dengan isu-isu Jira di tab isu-isu Jira di Bitbucket
+
+
+2. [Atlassian Open DevOps](https://www.atlassian.com/solutions/devops)
+
+    sebuah platform yang mengintegrasikan alat-alat Atlassian dan mitra untuk membangun dan mengoperasikan perangkat lunak dengan mudah. Tim dapat memilih alat-alat yang mereka inginkan atau membawa alat-alat yang sudah ada.
+
+
 ## Artifact
 
 ### JFrog Artifactory
@@ -104,6 +189,22 @@ eksternal ke repositori publik juga tersedia untuk repositori downstream.
 #### Referensi
 
 - [User Guide AWS CodeArtifact](https://docs.aws.amazon.com/codeartifact/latest/ug/welcome.html)
+
+### Docker Hub
+
+Docker Hub adalah layanan yang disediakan oleh Docker untuk menemukan dan berbagi citra kontainer.
+
+Docker Hub merupakan repositori _image_ _container_ terbesar di dunia dengan berbagai sumber konten termasuk pengembang komunitas _container_, proyek _open source_, dan _independent software vendors_[ISV] yang membangun dan mendistribusikan kode mereka dalam kontainer.
+
+#### Tugas apa saja yang bisa dilakukan di Docker Hub ?
+1. [Membuat dan mengelola tim dan organisasi](https://docs.docker.com/docker-hub/orgs/)
+2. [Membuat perusahaan](https://docs.docker.com/docker-hub/creating-companies/)
+3. [Menerapkan proses masuk [_sign in_]](https://docs.docker.com/docker-hub/configure-sign-in/)
+4. Menyiapkan [SSO](https://docs.docker.com/single-sign-on/) dan [SCIM](https://docs.docker.com/docker-hub/scim/)
+5. Gunakan [pemetaan Grup](https://docs.docker.com/docker-hub/group-mapping/)
+6. [Melaksanakan audit domain](https://docs.docker.com/docker-hub/domain-audit/)
+7. [Gunakan Manajemen Akses _Image_](https://docs.docker.com/docker-hub/image-access-management/) untuk mengontrol akses pengembang ke jenis gambar tertentu
+8. [Mengaktifkan Manajemen Akses Registri](https://docs.docker.com/desktop/hardened-desktop/registry-access-management/)
 
 ## Dependency Manager
 
@@ -575,3 +676,194 @@ Composer version 2.4.2 2022-09-14 16:11:15
 
 Referensi:
 - [Hostinger Guide](https://www.hostinger.com/tutorials/how-to-install-composer)
+
+### Apache Maven 🪶🪶🪶
+
+Salah satu _Build Automation Tool_ yang populer pada kalangan _developer_ Java adalah **Maven**. _Build Automation_ adalah proses otomatisasi pembangunan perangkat lunak yang bertujuan untuk mempermudah pengembang dalam mengelola dan mengotomatisasi tugas-tugas yang terkait dengan kompilasi, pengujian, dan distribusi kode sumber. Maven adalah salah satu alat (tool) yang digunakan dalam build automation di dunia pengembangan perangkat lunak, khususnya dalam proyek-proyek berbasis Java.
+
+Ada opsi lain selain **Apache Maven**, seperti **Gradle**. Gradle sendiri populer untuk kalangan programmer bahasa **Kotlin**.
+
+Untuk lebih lengkapnya, kita bisa langsung melihat pada dokumentasi-nya langsung pada tautan https://maven.apache.org/guides/getting-started/index.html
+
+#### Instalasi Maven [^](#)
+
+- Maven dibuat menggunakan bahasa pemrograman java yang notabene-nya multiplatform, jadi segala jenis OS dapat menginstallnya pada tautan [https://maven.apache.org/download.cgi](https://maven.apache.org/download.cgi)
+
+- Seletah instalasi `zip` file, kemudian ekstrak pada direktori yang kita inginkan
+
+- Masukkan lokasi direktori kedalam environment variable dengan nama variable `MAVEN_HOME`
+
+- Masukkan lokasi `bin` direktori dari maven ke dalam `Path` di dalam environment variable
+
+- Kedua langkah diatas kurang lebih sama dengan cara menambahkan environment variable untuk java yang dapat dilihat pada laman [**<u>ini</u>**](/java-standardization/README.md#b-instalasi-jdk-)
+
+- Pastikan dengan mencoba perintah
+    ```
+    mvn --version
+    ```
+
+    kalau berhasil akan muncul detail versi maven seperti
+
+    ```
+    Apache Maven 3.9.4 (dfbb324ad4a7c8fb0bf182e6d91b0ae20e3d2dd9)
+    Maven home: C:\Program Files\Maven\apache-maven-3.9.4
+    Java version: 17.0.2, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-17.0.2
+    Default locale: en_US, platform encoding: Cp1252
+    OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+    ```
+    versi mungkin berbeda sesuai yang kita install sebelumnya
+
+#### Membuat Project [^](#)
+- Buka terminal pada direktori dimana project akan disimpan
+- Ketik
+    ```sh
+    mvn archetype:generate
+    ```
+- Akan muncul berbagai template, kemudian carilah `maven-archetype-quickstart`
+    ```
+    Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): : maven-archetype-quickstart
+    Choose archetype:
+    1: remote -> com.github.ywchang:maven-archetype-quickstart (Provide up-to-date java quickstart archetype)
+    2: remote -> com.haoxuer.maven.archetype:maven-archetype-quickstart (a simple maven archetype)
+    3: remote -> org.apache.maven.archetypes:maven-archetype-quickstart (An archetype which contains a sample Maven project.)
+    Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 3:
+    ```
+    pilih nomor 3 dan enter
+
+- Pilih versi
+    ```
+    Choose org.apache.maven.archetypes:maven-archetype-quickstart version:
+    1: 1.0-alpha-1
+    2: 1.0-alpha-2
+    3: 1.0-alpha-3
+    4: 1.0-alpha-4
+    5: 1.0
+    6: 1.1
+    7: 1.3
+    8: 1.4
+    Choose a number: 8:
+    ```
+    default terpilih nomor 8, kita bisa tinggal tekan enter
+
+- 
+    ```
+    Define value for property 'groupId':
+    ```
+    Tulislah nama untuk `groupId` sesuai yang kita inginkan.<br/>`groupId` biasanya merepresentasikan nama company. Misal kita isi dengan **company-name**
+
+- 
+    ```
+    Define value for property 'artifactId':
+    ```
+    Tulislah nama untuk `artifactId` sesuai yang kita inginkan.<br/>`artifactId` merepresentasikan nama project kita. Misal kita isi dengan **demo-maven**
+
+- 
+    ```
+    Define value for property 'version' 1.0-SNAPSHOT: :
+    ```
+    Tulislah versi aplikasi project kita. Default `1.0-SNAPSHOT`, kita bisa langsung enter bila ingin menggunakan default version.
+
+- 
+    ```
+    Define value for property 'package' company-name: :
+    ```
+    Ini merupakan package pada main program kita. Biasanya penamaan package dinamai secara terbalik dari nama domain kita. Contoh, jika domain kita adalah **example.com**, maka package dapat dinamai **com.example.maven**.<br/>Misal kita isi dengan **com.example.maven**
+
+- 
+    ```
+    Confirm properties configuration:
+    groupId: company-name
+    artifactId: demo-maven
+    version: 1.0-SNAPSHOT
+    package: com.example.maven
+    Y: :
+    ```
+    Tekan `Y` (atau langsung enter, karena secara default sudah 'Y') jika detail yang diberikan sudah sesuai dengan apa yang kita isi 
+
+- Project siap di gunakan
+
+#### Struktur Maven Project [^](#)
+```
+nama-project/
+├── pom.xml
+└── src/
+    ├── main/
+    |   └── java/
+    |       └── com.example.app/
+    |           └── App.java
+    └── test/
+        └── java/
+            └── com.example.app/
+                └── AppTest.java
+```
+
+###### Penjelasan Struktur kode di atas :
+- `src.main.java.com.example.app` merupakan lokasi dimana kode program java ditempatkan
+
+- `src.test.java.com.example.app` merupakan lokaasi dimana unit test program java ditempatkan
+
+- `pom.xml` merupakan inti dari konfigurasi project Maven. Ini merupakan file konfigurasi yang berisi sebagian besar informasi yang diperlukan untuk membangun project sesuai yang kita inginkan.
+
+#### Maven Lifecycle [^](#)
+
+- `validate`: validate the project is correct and all necessary information is available
+- `clean`: Deleting the target folder (where the compilation results are stored)
+- `compile`: compile the source code of the project
+- `test`: test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed
+- `package`: take the compiled code and package it in its distributable format, such as a JAR.
+- `integration-test`: process and deploy the package if necessary into an environment where integration tests can be run
+- `verify`: run any checks to verify the package is valid and meets quality criteria
+- `install`: install the package into the local repository, for use as a dependency in other projects locally
+- `deploy`: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
+- untuk lebih lengkapnya, bisa dilihat pada dokumentasi nya langsung https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
+
+###### Cara menjalankan lifecycle :
+Cara menjalankan lifecycle, cukup dengan menggunakan perintah `mvn namalifecycle`. Bisa juga lebih dari satu seperti `mvn clean test install`
+
+#### Dependency [^](#)
+Dalam pembuatan aplikasi, sering kali kita butuh library dari luar untuk mendukung kemudahan kita dalam mengembangkan aplikasi. Tanpa Build Automation Tool seperti Apache Maven ini, akan banyak sekali yang harus dilakukan ketika kita ingin menambahkan library luar.
+
+Untuk mencari dependency dari luar, kita bisa mencarinya pada :
+- https://central.sonatype.com/
+- https://mvnrepository.com/
+
+Kemudian kita bisa menambahkan dependency yang kita butuhkan kedalam `pom.xml` pada bagian 
+```xml
+<dependencies>
+    <!-- letakkan disini -->
+</dependencies>
+```
+
+contoh : 
+```xml
+<dependencies>
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.10.1</version>
+    </dependency>
+</dependencies>
+```
+
+#### Repository [^](#)
+Saat kita menambahkan dependency, maven akan mencari dependecy tersebut pada berbagai repository yang maven miliki. 
+
+Terkadang kita ingin maven mencarinya pada repository yang kita inginkan, contoh repository pribadi atau milik perusahaan
+
+untuk kita kita bisa menambahkannya pada bagian 
+```xml
+<repositories>
+    <!-- letakkan disini -->
+</repositories>
+```
+
+contoh :
+```xml
+<repositories>
+    <repository>
+        <id>id</id>
+        <name>name</name>
+        <url>url</url>
+    </repository>
+</repositories>
+```
