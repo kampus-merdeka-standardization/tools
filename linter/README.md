@@ -8,10 +8,16 @@ SonarLint adalah ekstensi IDE gratis yang membantu kita menemukan dan memperbaik
 
 SonarLint mendukung berbagai bahasa pemrograman dan tersedia untuk diinstal dari _marketplace_ IDE, tinggal kita cari `sonarlint` dan install. Atau pada website https://www.sonarsource.com/products/sonarlint/ dan install sesuai IDE yang digunakan.
 
+### Fitur
 Beberapa fitur utama SonarLint meliputi:
 - Analisis real-time: Memberikan umpan balik instan saat Anda menulis kode.
 - Perbaikan cepat: Menyarankan solusi yang disesuaikan dengan kode spesifik Anda sehingga Anda dapat memperbaiki masalah yang ditandai secara real-time.
 - Aturan dan pengaturan analisis tim yang disatukan: Dengan terhubung ke SonarQube atau SonarCloud, aturan dan pengaturan analisis disinkronkan ke SonarLint, menyelaraskan tim di sekitar standar Clean Code tunggal.
+
+### Instalasi
+- Kita bisa dengan mudah mencari plugin/ekstensi bernama "SonarLint" kemudian install. 
+- Setelahnya mungkin dibutuhkan untuk melakukan restart IDE yang baru saja di-install SonarLint.
+-  Kode siap dianalisis.
 
 ## Checksyle (java)
 
