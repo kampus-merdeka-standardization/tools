@@ -26,7 +26,7 @@ Splunk adalah sebuah platform yang memungkinkan pengumpulan, pencarian, pemantau
    - Splunk juga memanfaatkan Universal Forwarder, sebuah mekanisme populer untuk mendapatkan data ke dalam Splunk Enterprise dan Splunk Cloud Platform.
 
 2. **Indeksasi**:
-   - Setelah data dikumpulkan, Splunk mengindeks data tersebut untuk memudahkan pencarian dan analisis【197†source】.
+   - Setelah data dikumpulkan, Splunk mengindeks data tersebut untuk memudahkan pencarian dan analisis.
    - Indeksasi membantu dalam mengorganisir data dalam format yang efisien sehingga pencarian dan pengambilan data menjadi cepat dan mudah.
 
 3. **Pencarian dan Analisis**:
@@ -101,7 +101,6 @@ Berikut adalah langkah-langkah umum untuk menginstal Splunk:
 
 Instruksi lebih lanjut dan spesifik dapat ditemukan di [Dokumentasi Resmi Splunk](https://docs.splunk.com/Documentation) dan [tutorial instalasi lainnya](https://www.guru99.com/download-install-splunk.html).
 
-
 ### Cara Pakai Splunk
 
 #### Mempersiapkan Splunk:
@@ -132,3 +131,59 @@ Instruksi lebih lanjut dan spesifik dapat ditemukan di [Dokumentasi Resmi Splunk
 3. [Splunk Tutorial for Beginners: What is Splunk Tool? How to Use? Guru99. ](https://www.guru99.com/splunk-tutorial.html).
 4. [Splunk Quick Reference Guide. Splunk Documentation. k](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/SearchCheatsheet).
 5. [Splunk Tutorial: Getting Started Using Splunk. Splunk. ](https://www.splunk.com/en_us/blog/tips-and-tricks/splunk-tutorial-getting-started-using-splunk.html).
+
+## Kibana
+
+Kibana adalah alat visualisasi dan eksplorasi data open-source yang digunakan untuk analisis log dan time-series, pemantauan aplikasi, dan kasus penggunaan intelijen operasional. Kibana menawarkan fitur yang kuat dan mudah digunakan seperti histogram, grafik garis, diagram lingkaran, dan dukungan geospasial built-in dan menyediakan integrasi ketat dengan Elasticsearch, analitik populer dan mesin pencari, yang membuat Kibana menjadi pilihan default untuk memvisualisasikan data yang disimpan dalam Elasticsearch.
+
+### Kelebihan
+
+- Dashboard 
+- Integrasi dengan Elastic Search
+- Search, Filters, dan Charts
+
+### Kekurangan
+
+- Search queries sedikit lebih kompleks
+- Dashboard dan laporan sedikit rumit
+
+### Referensi
+
+- [Kibana](https://www.pointstar.co.id/kibana/)
+- [Pros Con Kibana](https://www.trustradius.com/products/kibana/reviews?qs=pros-and-cons#product-details)
+
+## Grafana
+
+Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
+
+Grafana merupakan aplikasi open-source untuk memonitor dan menganalisa metrics. Kita menggunakan Grafana untuk memvisualisasikan metrics menjadi grafik-grafik yang menarik untuk dilihat dan mudah dimengerti. Grafana memiliki banyak fitur yang powerful untuk memonitor dan menganalisa. Grafana juga memiliki fitur alerting yang sangat berguna. Feature ini telah banyak digunakan oleh ribuan perusahaan.
+
+Salah satu cara termudah untuk mengeksplore grafa pada komputer lokal adalah dengan menginstal grafana dengan docker, pastikan kamu telah menginstal docker pada komputer yang kamu gunakan.
+
+Gunakan ini untuk menjalankan Grafana dengan docker. Kalau ingin menggunakan metode lain, bisa lihat di https://grafana.com/get.
+```go
+docker run -d -p 3000:3000 grafana/grafana
+```
+
+Buka http://localhost:3000/ untuk masuk ke dashboard Grafana. Login dengan username default admin dan password admin. Setelah login, jangan lupa untuk ganti password. Kemudian kamu akan melihat halaman ini:
+
+![Grafana](https://cms.halovina.com/wp-content/uploads/2021/05/grafana-dashboard.jpg)
+
+### Kelebihan
+
+- Open-source
+- Dashboard dibuat di sisi client
+- Pengaturannya sederhana, tidak memerlukan server HTTP
+- Plugin Grafana merender data secara real-time
+
+### Kekurangan
+
+- Tidak support log analysis
+- Customization fungsi lebih sedikit
+- Organisasi dasbornya terbatas dan dokumentasinya tidak sesuai standar
+
+### Referensi
+
+- [Mengenal Grafana Aplikasi Web](https://halovina.com/mengenal-grafana-aplikasi-web-visualisasi-interaktif/)
+- [Gravana vs Kibana](https://www.geeksforgeeks.org/grafana-vs-kibana/)
+
