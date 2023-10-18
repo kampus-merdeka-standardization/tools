@@ -101,3 +101,22 @@ Berikut adalah langkah-langkah umum untuk menginstal Splunk:
 
 Instruksi lebih lanjut dan spesifik dapat ditemukan di [Dokumentasi Resmi Splunk](https://docs.splunk.com/Documentation) dan [tutorial instalasi lainnya](https://www.guru99.com/download-install-splunk.html).
 
+## Kibana
+
+Kibana adalah alat visualisasi dan eksplorasi data open-source yang digunakan untuk analisis log dan time-series, pemantauan aplikasi, dan kasus penggunaan intelijen operasional. Kibana menawarkan fitur yang kuat dan mudah digunakan seperti histogram, grafik garis, diagram lingkaran, dan dukungan geospasial built-in dan menyediakan integrasi ketat dengan Elasticsearch, analitik populer dan mesin pencari, yang membuat Kibana menjadi pilihan default untuk memvisualisasikan data yang disimpan dalam Elasticsearch.
+
+### Kelebihan
+
+- Dashboard 
+- Integrasi dengan Elastic Search
+- Search, Filters, dan Charts
+
+### Kekurangan
+
+- Search queries sedikit lebih kompleks
+- Dashboard dan laporan sedikit rumit
+
+### Referensi
+
+- [Kibana](https://www.pointstar.co.id/kibana/)
+- [Pros Con Kibana](https://www.trustradius.com/products/kibana/reviews?qs=pros-and-cons#product-details)
