@@ -184,3 +184,165 @@ dan mengatur variabel instan berikut: `SCRIPT_INPUT_FILE_COUNT` dan `SCRIPT_INPU
 ### Referensi
 
 - [SwiftLint GitHub](https://github.com/realm/SwiftLint)
+
+
+
+## ESlint
+
+### ESLint: Pengantar
+ESLint adalah alat analisis kode statis yang dirancang untuk mengidentifikasi dan melaporkan pola dalam kode ECMAScript/JavaScript, dengan tujuan membuat kode menjadi lebih konsisten dan menghindari bug. Setiap aturan dalam ESLint adalah plugin, dan Anda dapat menambahkan lebih banyak plugin pada saat runtime. ESLint diciptakan oleh Nicholas C. Zakas pada Juni 2013 sebagai utilitas linting JavaScript sumber terbuka. Alat ini sering digunakan untuk menemukan pola bermasalah atau kode yang tidak sesuai dengan pedoman gaya tertentu. ESLint ditulis menggunakan Node.js untuk menyediakan lingkungan runtime yang cepat dan instalasi yang mudah melalui npm.
+
+ESLint menganalisis kode secara statis untuk cepat menemukan masalah, dan terintegrasi dengan sebagian besar editor teks. ESLint dapat dijalankan sebagai bagian dari pipeline integrasi terus menerus, dan banyak masalah yang ditemukan oleh ESLint dapat diperbaiki secara otomatis. Selain itu, aturan dalam ESLint dapat dikonfigurasi, dan aturan kustom dapat ditentukan dan dimuat. ESLint mencakup masalah kualitas kode dan masalah gaya kode.
+
+#### Referensi:
+1. ESLint Official Documentation: [Getting Started with ESLint - Pluggable JavaScript Linter](https://eslint.org/docs/user-guide/getting-started).
+2. DEV Community: [ESLint: What, Why, When, How](https://dev.to/codemouse92/eslint-what-why-when-how-5cf3).
+3. Wikipedia: [ESLint](https://en.wikipedia.org/wiki/ESLint).
+4. Sampig GitHub: [Introduction to ESLint](https://sampig.github.io/blog/introduction-to-eslint).
+
+
+### Cara Kerja ESLint
+
+#### Analisis Kode Sumber:
+ESLint menganalisis kode sumber Anda untuk mencari kesalahan dan pelanggaran terhadap praktik terbaik. Alat ini membantu Anda membuat kode lebih konsisten dan menghindari bug​​.
+
+#### Penerapan Aturan:
+ESLint bekerja dengan mem-parsing kode Anda dan menerapkan set aturan yang dapat Anda konfigurasi atau sesuaikan. Aturan-aturan ini dapat didasarkan pada praktik terbaik, standar pemrograman, atau preferensi Anda sendiri​​.
+
+#### Perbaikan Otomatis:
+ESLint memiliki kemampuan untuk memperbaiki masalah secara otomatis. Perbaikan yang dibuat oleh ESLint sadar sintaks sehingga Anda tidak akan mengalami kesalahan yang diperkenalkan oleh algoritma temukan-dan-ganti tradisional​3.
+
+#### Konfigurasi:
+ESLint sepenuhnya dapat dikonfigurasi. Anda dapat mengonfigurasinya dengan file .eslintrc.{js,yml,json} dan menambahkan aturan, plugin, dan konfigurasi individu. Tingkat kesalahan dari aturan dapat diatur ke salah satu dari tiga nilai: "off" atau 0 untuk mematikan aturan, "warn" atau 1 untuk mengaktifkan aturan sebagai peringatan, dan "error" atau 2 untuk mengaktifkan aturan sebagai kesalahan​1​.
+
+#### Struktur Internal:
+Di tingkat yang lebih dalam, ESLint memiliki beberapa komponen penting seperti bin/eslint.js yang merupakan pembungkus sederhana untuk bootstrap ESLint, lib/api.js yang mengekspos objek yang berisi kelas publik, dan lib/cli.js yang merupakan inti dari CLI ESLint​.
+
+Referensi:
+- [Dokumentasi Resmi ESLint: Getting Started with ESLint​](https://eslint.org/docs/latest/use/getting-started)
+- [LinkedIn: ESLint Tutorial for Beginners: Benefits and Tips](https://www.linkedin.com/pulse/eslint-tutorial-begin)
+
+### Kelebihan dan Kekurangan ESLint
+
+#### Kelebihan:
+1. **Deteksi Otomatis Masalah:**
+   ESLint secara otomatis menganalisis kode untuk mencari potensi bug dan kesalahan sesuai dengan standar atau konvensi yang telah ditetapkan dalam konfigurasi ESLint. Hal ini memungkinkan pengembang untuk mendapatkan umpan balik cepat mengenai apakah kode mereka sudah sesuai dengan praktik terbaik atau apakah ada bagian kode yang berpotensi menyebabkan bug di masa mendatang.
+
+2. **Perbaikan Otomatis:**
+   ESLint memiliki fitur untuk memperbaiki otomatis kode yang salah sesuai dengan aturan yang ditetapkan, sehingga memudahkan pengembang untuk memperbaiki kesalahan dengan cepat.
+
+3. **Kustomisasi:**
+   ESLint memungkinkan pengembang untuk mengkustomisasi konfigurasi, parser, dan aturan sesuai dengan kebutuhan proyek mereka. Ini juga mencakup dukungan untuk TypeScript dan banyak pustaka atau kerangka kerja populer lainnya seperti React dan Vue, dengan banyak plugin tersedia untuk memperluas fungsionalitasnya.
+
+4. **Integrasi Mudah:**
+   ESLint mudah diintegrasikan dengan alat dan editor kode lain, serta memiliki .eslintignore file untuk menghindari pemeriksaan file tertentu, mirip dengan .gitignore.
+
+5. **Deteksi Vulnerabilitas Keamanan:**
+   ESLint membantu dalam mendeteksi vulnerabilitas keamanan dalam kode, yang merupakan keuntungan besar untuk memastikan keamanan aplikasi.
+
+6. **Pencegahan Kesalahan Sintaksis dan Global yang Tidak Disengaja:**
+   ESLint membantu mencegah kesalahan sintaksis dan variabel global yang tidak disengaja yang mungkin lolos tanpa diketahui dalam bahasa yang dinamis seperti JavaScript.
+
+#### Kekurangan:
+1. **Kemungkinan Positif Palsu atau Negatif Palsu:**
+   Terkadang, ESLint dapat melaporkan positif palsu atau negatif palsu, yang bisa menjadi masalah dalam proyek besar dan kompleks.
+
+2. **Kurva Belajar:**
+   Mungkin ada kurva belajar untuk mengonfigurasi dan memahami semua aturan dan opsi yang tersedia di ESLint, terutama untuk pengguna baru atau tim yang belum familiar dengan linter.
+
+3. **Konfigurasi dan Pemeliharaan:**
+   ESLint memerlukan konfigurasi awal dan pemeliharaan berkelanjutan untuk memastikan bahwa itu tetap efektif dan relevan dengan kebutuhan proyek.
+
+Referensi:
+- Rivki, M. (n.d.). Kenalan dengan ESLint, Linter Javascript. Retrieved from [rivki.dev](https://rivki.dev)
+- Why and how to use ESLint in your project - IBM Developer. (n.d.). Retrieved from [IBM Developer](https://developer.ibm.com)
+- Pros and Cons for using ESLint for Software Security - Codiga. (n.d.). Retrieved from [Codiga](https://www.codiga.io)
+- Understanding the Real Advantages of Using ESLint - Rangle. (n.d.). Retrieved from [Rangle](https://rangle.io)
+
+
+### Cara Install ESLint
+
+#### Prasyarat:
+Sebelum memulai instalasi ESLint, pastikan bahwa Node.js versi `^12.22.0`, `^14.17.0`, atau `>=16.0.0` sudah terinstal pada sistem Anda. Jika Anda menggunakan distribusi Node.js resmi, dukungan SSL sudah terintegrasi dalam instalasi tersebut.
+
+#### Langkah-langkah Instalasi:
+1. **Instalasi Lokal**:
+   - Buka terminal pada sistem Anda.
+   - Jalankan perintah berikut untuk menginstal dan mengonfigurasi ESLint:
+     ```bash
+     npm init @eslint/config
+     ```
+   - Jika Anda ingin menggunakan konfigurasi berbagi tertentu yang di-host di npm, Anda dapat menggunakan opsi `--config` dan menentukan nama paket:
+     ```bash
+     # npm 7+
+     npm init @eslint/config -- --config semistandard
+
+     # atau (prefix `eslint-config` adalah opsional)
+     npm init @eslint/config -- --config eslint-config-semistandard
+
+     # ⚠️ npm 6.x tanpa tanda dash ganda ekstra:
+     npm init @eslint/config --config semistandard
+     ```
+   - Setelah konfigurasi awal, Anda dapat menjalankan ESLint pada file atau direktori mana saja seperti ini:
+     ```bash
+     npx eslint yourfile.js
+
+     # atau
+
+     yarn run eslint yourfile.js
+     ```
+   Catatan: Perintah `npm init @eslint/config` mengasumsikan bahwa Anda sudah memiliki file `package.json`. Jika belum, pastikan untuk menjalankan `npm init` atau `yarn init` sebelumnya.
+
+2. **Instalasi Global**:
+   - Untuk menginstal ESLint secara global sehingga dapat digunakan di seluruh sistem, jalankan perintah berikut:
+     ```bash
+     npm install -g eslint
+     ```
+   - Untuk memeriksa instalasi dan melihat versi ESLint, jalankan perintah berikut:
+     ```bash
+     eslint -v
+     ```
+   - Untuk mengetahui di mana ESLint diinstal (asumsikan MacOS/Linux), Anda dapat menjalankan perintah berikut:
+     ```bash
+     whereis eslint
+     ```
+   - Setelah instalasi global, Anda dapat menjalankan ESLint pada file atau direktori mana saja dari mana saja dalam sistem Anda.
+
+#### Referensi:
+- ESLint - [Getting Started with ESLint](https://eslint.org/docs/latest/use/getting-started)
+- Stack Overflow - [How to install ESLint globally?](https://stackoverflow.com/questions/59404272/how-to-install-eslint-globally)
+- npm - [ESLint on npmjs.com](https://www.npmjs.com/package/eslint)
+- Microsoft - [Linting JavaScript in Visual Studio](https://learn.microsoft.com/en-us/visualstudio/ide/how-to-linting-javascript)
+
+### Cara Pakai ESLint
+
+Menggunakan ESLint untuk memeriksa kode Anda bisa membantu meningkatkan kualitas kode dan menjaga konsistensi gaya penulisan kode di seluruh proyek. Berikut adalah langkah-langkah dasar untuk menggunakan ESLint:
+
+1. **Konfigurasi ESLint**:
+   - Setelah instalasi, buat file konfigurasi ESLint dengan menjalankan `eslint --init` di direktori proyek Anda. Ini akan membimbing Anda melalui proses pembuatan file konfigurasi ESLint (`.eslintrc`).
+   - Anda juga dapat menyesuaikan konfigurasi ESLint sesuai kebutuhan proyek dengan mengedit file `.eslintrc` atau file konfigurasi lain yang relevan.
+
+2. **Menjalankan ESLint**:
+   - Jalankan ESLint pada file atau direktori tertentu dengan perintah `eslint [your file/directory]`. Misalnya, `eslint src/` akan memeriksa semua file di direktori `src`.
+   - Anda juga dapat menambahkan skrip ke file `package.json` Anda untuk menjalankan ESLint. Misalnya: 
+     ```json
+     "scripts": {
+       "lint": "eslint src/"
+     }
+     ```
+     Kemudian, Anda dapat menjalankan ESLint dengan perintah `npm run lint`.
+
+3. **Memeriksa Hasil**:
+   - ESLint akan melaporkan kesalahan dan peringatan pada terminal. Setiap masalah akan memiliki penjelasan singkat dan lokasi baris/karakter di mana masalah itu terjadi.
+   - Anda juga dapat menggunakan flag `--fix` untuk memperbaiki otomatis sebagian masalah yang terdeteksi. Misalnya, `eslint src/ --fix`.
+
+4. **Integrasi dengan Editor**:
+   - Banyak editor teks dan IDE memiliki plugin ESLint yang memungkinkan Anda untuk melihat hasil linting secara real-time saat Anda mengetik kode.
+   - Contoh plugin termasuk ESLint plugin untuk Visual Studio Code, Sublime Text, atau Atom.
+
+5. **Menggunakan Plugins dan Aturan Kustom**:
+   - ESLint mendukung plugin dan aturan kustom. Jika Anda ingin menambahkan aturan atau perangkat tambahan tertentu, Anda dapat menginstal plugin terkait dan memperbarui konfigurasi ESLint Anda untuk memasukkan plugin atau aturan tersebut.
+
+6. **Memelihara Konfigurasi ESLint**:
+   - Secara berkala, perbarui konfigurasi ESLint Anda untuk mencocokkan evolusi kebutuhan proyek dan tim Anda.
+   - Pertimbangkan untuk menggunakan konfigurasi berbagi atau ekstensi untuk menjaga konfigurasi ESLint Anda tetap konsisten di seluruh proyek atau organisasi.

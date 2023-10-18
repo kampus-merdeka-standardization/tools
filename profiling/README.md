@@ -52,3 +52,31 @@ Parameter `localhost:3435` adalah alamat untuk mengakses web interface nya. Kita
 
 - [Profiling Go App](https://www.jajaldoang.com/id/post/profiling-go-app-with-pprof/)
 - [Golang Profiling](https://granulate.io/blog/golang-profiling-basics-quick-tutorial/)
+
+
+## Node JS Profiler (`--prof`)
+
+Cara termudah di Node.js untuk membuat profile application adalah dengan menggunakan profiler bawaan, yang mengumpulkan semua data dari fungsi-fungsi dan mencatatnya ke dalam sebuah file. Node.js mengimplementasikan hal ini dengan memperkenalkan flag--prof, yang berkomunikasi dengan profiler V8 dan kemudian mencatat datanya.
+
+### Penggunaan Node.js inbuilt profiler
+
+1. **Mengaktifkan Profiler**:
+   Pertama-tama, Anda perlu mengaktifkan profiler saat memulai aplikasi Node.js Anda. Anda dapat melakukannya dengan menggunakan flag `--prof` saat memulai aplikasi Anda:
+   ```bash
+   node --prof app.js
+   ```
+
+2. **Mengumpulkan Data Profil**:
+   Setelah Anda mengaktifkan profiler, Node.js akan mengumpulkan data profil selama aplikasi Anda berjalan. Data ini akan disimpan dalam file log dengan ekstensi `.log` yang akan dibuat di direktori saat ini.
+
+3. **Menghasilkan Laporan Profil**:
+   Setelah Anda mengumpulkan data profil, Anda dapat menghasilkan laporan profil dengan menggunakan perintah `node --prof-process`. Ini akan mengambil file log profil yang telah Anda kumpulkan dan menghasilkan laporan yang dapat dibaca manusia:
+   ```bash
+   node --prof-process isolate-0xnnnnnnnnnnnn-v8.log > profile.txt
+   ```
+
+4. **Menganalisis Laporan Profil**:
+   Buka file `profile.txt` dalam editor teks dan analisis laporan untuk menemukan area aplikasi Anda yang mungkin membutuhkan optimalisasi.
+
+5. **Optimalisasi**:
+   Gunakan informasi dari laporan profil untuk mengidentifikasi dan mengoptimalkan bagian kode yang lambat atau tidak efisien.
