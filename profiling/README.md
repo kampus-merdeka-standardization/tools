@@ -1,5 +1,23 @@
 # Profiling
 
+## JProfiler
+
+Referensi : [JProfiler Help - Introduction](https://www.ej-technologies.com/resources/jprofiler/help/doc/main/introduction.html)
+
+JProfiler adalah alat profesional untuk menganalisis apa yang terjadi di dalam JVM yang sedang berjalan. Ini adalah alat profil Java terkemuka untuk pemrofilan di JVM. Antarmuka pengguna JProfiler yang intuitif membantu Anda menyelesaikan bottleneck kinerja, menemukan kebocoran memori, dan memahami masalah threading.
+
+Berikut adalah beberapa fitur utama dari JProfiler:
+- **Kemudahan penggunaan luar biasa**: Mengkonfigurasi sesi adalah hal yang mudah, integrasi pihak ketiga membuat memulai menjadi mudah dan data profil disajikan dengan cara yang alami.
+- **Profil basis data untuk JDBC, JPA dan NoSQL**: Panggilan basis data adalah alasan utama masalah kinerja dalam aplikasi bisnis. Probe JDBC dan JPA/Hibernate JProfiler serta probe NoSQL untuk MongoDB, Cassandra dan HBase menunjukkan alasan akses basis data yang lambat dan bagaimana pernyataan lambat dipanggil oleh kode Anda.
+- **Profil remote tanpa konfigurasi**: Melakukan profil pada JVM yang berjalan di mesin remote tidak pernah semudah ini dengan JProfiler. Fungsionalitas terowongan SSH bawaan menghubungkan Anda ke mesin bahkan melalui beberapa lompatan dan kemudian JProfiler mengurus sisanya.
+- **Dukungan bawaan untuk Docker dan Kubernetes**: Dengan JProfiler, Anda dapat melakukan profil pada JVM yang berjalan di dalam wadah Docker atau Kubernetes tanpa konfigurasi apa pun di dalam wadah.
+- **Dukungan luar biasa untuk Kerangka Kerja Java Enterprise**: Dukungan khusus untuk JEE dan Spring hadir dalam sebagian besar tampilan di JProfiler.
+
+### Instalasi
+Kita dapat menginstal JProfiler dpada situs https://www.ej-technologies.com/products/jprofiler/overview.html
+
+JProfiler juga tersedia sebagai plugin untuk Intellij Idea https://plugins.jetbrains.com/plugin/253-jprofiler
+
 ## pprof
 
 pprof adalah *tool* untuk membuat *profiling* program Go. Ini adalah *standard library* Go dan dapat digunakan untuk menghasilkan profil rinci program Go, termasuk profil CPU, memori, dan konkurensi.
