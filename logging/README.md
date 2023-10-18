@@ -120,3 +120,38 @@ Kibana adalah alat visualisasi dan eksplorasi data open-source yang digunakan un
 
 - [Kibana](https://www.pointstar.co.id/kibana/)
 - [Pros Con Kibana](https://www.trustradius.com/products/kibana/reviews?qs=pros-and-cons#product-details)
+
+## Grafana
+
+Grafana adalah analitik sumber terbuka multi-platform dan aplikasi web visualisasi interaktif. Ini menyediakan bagan, grafik, dan peringatan untuk web saat terhubung ke sumber data yang didukung.
+
+Grafana merupakan aplikasi open-source untuk memonitor dan menganalisa metrics. Kita menggunakan Grafana untuk memvisualisasikan metrics menjadi grafik-grafik yang menarik untuk dilihat dan mudah dimengerti. Grafana memiliki banyak fitur yang powerful untuk memonitor dan menganalisa. Grafana juga memiliki fitur alerting yang sangat berguna. Feature ini telah banyak digunakan oleh ribuan perusahaan.
+
+Salah satu cara termudah untuk mengeksplore grafa pada komputer lokal adalah dengan menginstal grafana dengan docker, pastikan kamu telah menginstal docker pada komputer yang kamu gunakan.
+
+Gunakan ini untuk menjalankan Grafana dengan docker. Kalau ingin menggunakan metode lain, bisa lihat di https://grafana.com/get.
+```go
+docker run -d -p 3000:3000 grafana/grafana
+```
+
+Buka http://localhost:3000/ untuk masuk ke dashboard Grafana. Login dengan username default admin dan password admin. Setelah login, jangan lupa untuk ganti password. Kemudian kamu akan melihat halaman ini:
+
+![Grafana](https://cms.halovina.com/wp-content/uploads/2021/05/grafana-dashboard.jpg)
+
+### Kelebihan
+
+- Open-source
+- Dashboard dibuat di sisi client
+- Pengaturannya sederhana, tidak memerlukan server HTTP
+- Plugin Grafana merender data secara real-time
+
+### Kekurangan
+
+- Tidak support log analysis
+- Customization fungsi lebih sedikit
+- Organisasi dasbornya terbatas dan dokumentasinya tidak sesuai standar
+
+### Referensi
+
+- [Mengenal Grafana Aplikasi Web](https://halovina.com/mengenal-grafana-aplikasi-web-visualisasi-interaktif/)
+- [Gravana vs Kibana](https://www.geeksforgeeks.org/grafana-vs-kibana/)
