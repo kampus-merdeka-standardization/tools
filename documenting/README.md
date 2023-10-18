@@ -2,6 +2,10 @@
 
 ## Markdown
 
+Referensi :
+- [Panduan Lengkap Belajar Menulis dengan Markdown untuk Pemula](https://www.petanikode.com/markdown-pemula/)
+- [Markdown: Apa itu, Cara dan Kenapa Menggunakannya](https://dewabiz.com/markdown/)
+
 Markdown adalah bahasa markup yang ringan dan sederhana, dirancang untuk mempermudah penulisan dan membaca dokumen berbasis web. Dibuat oleh John Gruber pada tahun 2004, Markdown menggunakan sintaks pemformatan teks biasa, dengan tujuan untuk dikonversi menjadi format HTML terstruktur.
 
 File Markdown dapat kita simpan dengan ekstensi `.markdown` atau `.md`. Contoh: `belajar-menulis.md` atau `belajar-menulis.markdown`.
