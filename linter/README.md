@@ -42,6 +42,33 @@ Selain itu, plug-in ditulis oleh pihak ketiga. Beberapa di antaranya masih didas
 dan masih banyak yang lainnya, dapat dilihat pada https://checkstyle.sourceforge.io/#Related_Tools_Active_Tools
 
 
+## PMD
+
+referensi :
+- [PMD](https://pmd.github.io/)
+
+PMD adalah alat analisis kode sumber. Alat ini dapat menemukan cacat pemrograman umum seperti variabel yang tidak digunakan, blok penangkapan kosong, pembuatan objek yang tidak perlu, dan sebagainya. PMD mendukung berbagai bahasa pemrograman seperti Java, JavaScript, Salesforce.com Apex dan Visualforce, PLSQL, Apache Velocity, XML, XSL.
+
+Selain itu, PMD juga mencakup CPD (Copy-Paste Detector), yang dapat menemukan kode yang duplikat dalam berbagai bahasa pemrograman.
+
+PMD dapat digunakan dalam proses _linting_, yaitu proses analisis statis pada kode untuk mendeteksi kesalahan pemrograman, bug, kesalahan gaya dan format, dan entri yang mencurigakan. Dengan menggunakan PMD dalam linting, Anda dapat memastikan kode Anda mengikuti standar tertentu dan lebih efisien.
+
+### Cara menggunakan PMD
+Berikut adalah beberapa langkah untuk menggunakan PMD:
+
+1. **Pilih Bahasa Pemrograman**: PMD mendukung berbagai bahasa pemrograman seperti Java, JavaScript, Salesforce.com Apex dan Visualforce, PLSQL, Apache Velocity, XML, XSL.
+
+2. **Atur Aturan PMD**: Anda perlu mengonfigurasi aturan PMD dalam pengaturan plugin dan memilih versi PMD yang sesuai.
+
+3. **Integrasi dengan IDE**: PMD dapat diintegrasikan sebagai inspeksi dalam IDE seperti [IntelliJ](https://plugins.jetbrains.com/plugin/15412-pmd-idea), sehingga file yang sedang dibuka dapat dipindai "_on the fly_". Selain Intellij Idea, PMD juga dapat diintegrasikan dengan IDE lainnya, seperti pada VSCode, kita bisa mencari ekstensi "PMD" lalu install
+
+4. **Pemindaian Kode**: Anda dapat menjalankan kode Anda melalui linter dan mendapatkan pemberitahuan dini tentang kesalahan pemrograman, bug, kesalahan gaya dan format, dan entri yang mencurigakan¹.
+
+5. **Perbaikan Cepat**: Untuk beberapa aturan umum, perbaikan cepat tersedia⁸.
+
+6. **Analisis Kode**: Anda juga dapat memeriksa jenis variabel, menghapus variabel yang tidak digunakan, dan membuat kode Anda lebih efisien.
+
+
 ## GolangCI-Lint
 
 `golangci-lint` adalah Go linters runner yang cepat. Ia menjalankan linter secara paralel, menggunakan caching, mendukung 
