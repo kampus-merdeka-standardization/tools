@@ -13,6 +13,35 @@ Beberapa fitur utama SonarLint meliputi:
 - Perbaikan cepat: Menyarankan solusi yang disesuaikan dengan kode spesifik Anda sehingga Anda dapat memperbaiki masalah yang ditandai secara real-time.
 - Aturan dan pengaturan analisis tim yang disatukan: Dengan terhubung ke SonarQube atau SonarCloud, aturan dan pengaturan analisis disinkronkan ke SonarLint, menyelaraskan tim di sekitar standar Clean Code tunggal.
 
+## Checksyle (java)
+
+Referensi : [checkstyle – Checkstyle 10.12.4](https://checkstyle.sourceforge.io/)
+
+Checkstyle adalah sebuah alat pengembangan yang sangat berguna bagi para programmer dalam menulis kode Java sesuai dengan standar penulisan. Dengan kemampuan otomatisasinya, Checkstyle membantu menghemat waktu dan tenaga manusia dalam proses pengecekan kode. Yang membuat Checkstyle sangat fleksibel adalah kemampuannya untuk dikonfigurasi sesuai dengan hampir semua standar penulisan yang ada, termasuk contoh file konfigurasi untuk Sun Code Conventions dan Google Java Style. Alat ini sangat komprehensif dalam memeriksa berbagai aspek kode sumber, mulai dari masalah desain kelas, metode, layout, hingga format. Integrasi Checkstyle ke dalam proses build atau lingkungan pengembangan menjadi lebih mudah berkat plugin-plugin yang disediakan, termasuk yang tersedia untuk Ant, Maven, Eclipse, dan juga plugin pihak ketiga untuk IDE lainnya. Selain itu, Checkstyle mengikuti versi Romantis dan Semantiknya sendiri, hanya dibatasi oleh versi minimal JRE. Untuk detail lebih lanjut mengenai keterbatasannya, dapat merujuk pada daftar keterbatasan lengkap yang disediakan.
+
+### Cara Download
+Rilis terbaru dari Checkstyle dapat diunduh dari [halaman rilis GitHub](https://github.com/checkstyle/checkstyle/releases/), atau [Maven central](https://central.sonatype.com/search?q=g:com.puppycrawl.tools%20%20a:checkstyle&smo=true).
+
+Jika Anda ingin hidup di ujung tombak, Anda bisa [_checkout_](https://github.com/checkstyle/checkstyle) kode pengembangan saat ini dari GitHub dan mengkompilasinya sendiri. Atau gunakan [jitpack.io](https://jitpack.io/) untuk membangun dan mendapatkan artefak yang kita butuhkan (kita bahkan bisa membangun repo bercabang).
+
+
+### _Related Tools_
+Checkstyle sangat berguna jika kita mengintegrasikannya ke dalam proses build atau lingkungan pengembangan kita. Distribusinya meliputi:
+
+1. Sebuah [_Ant Task_](https://checkstyle.sourceforge.io/anttask.html).
+2. [_command line_](https://checkstyle.sourceforge.io/cmdline.html) _interface_ (CLI).
+
+Selain itu, plug-in ditulis oleh pihak ketiga. Beberapa di antaranya masih didasarkan pada rilis Checkstyle 2.4, meskipun ada banyak perbaikan sejak saat itu. Plug-in yang dikenal adalah:
+
+| IDE / _Build tool_ | _Main_/_Initial Author_ | _Available from_ | _Remarks_ |
+| :------ | :------ | :------ | :------ |
+| IntelliJ IDEA |	James Shiell | [_Checkstyle-idea Project Page_](https://github.com/jshiell/checkstyle-idea) | Provides real-time and on-demand scanning. |
+| Visual Studio Code | Sheng Chen |	[vscode-checkstyle](https://marketplace.visualstudio.com/items?itemName=shengchen.vscode-checkstyle) | Checkstyle for Microsoft Visual Studio Code
+| ... | ... | ... | ... |
+
+dan masih banyak yang lainnya, dapat dilihat pada https://checkstyle.sourceforge.io/#Related_Tools_Active_Tools
+
+
 ## GolangCI-Lint
 
 `golangci-lint` adalah Go linters runner yang cepat. Ia menjalankan linter secara paralel, menggunakan caching, mendukung 
