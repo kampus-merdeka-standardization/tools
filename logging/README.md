@@ -26,7 +26,7 @@ Splunk adalah sebuah platform yang memungkinkan pengumpulan, pencarian, pemantau
    - Splunk juga memanfaatkan Universal Forwarder, sebuah mekanisme populer untuk mendapatkan data ke dalam Splunk Enterprise dan Splunk Cloud Platform.
 
 2. **Indeksasi**:
-   - Setelah data dikumpulkan, Splunk mengindeks data tersebut untuk memudahkan pencarian dan analisis【197†source】.
+   - Setelah data dikumpulkan, Splunk mengindeks data tersebut untuk memudahkan pencarian dan analisis.
    - Indeksasi membantu dalam mengorganisir data dalam format yang efisien sehingga pencarian dan pengambilan data menjadi cepat dan mudah.
 
 3. **Pencarian dan Analisis**:
@@ -101,6 +101,37 @@ Berikut adalah langkah-langkah umum untuk menginstal Splunk:
 
 Instruksi lebih lanjut dan spesifik dapat ditemukan di [Dokumentasi Resmi Splunk](https://docs.splunk.com/Documentation) dan [tutorial instalasi lainnya](https://www.guru99.com/download-install-splunk.html).
 
+### Cara Pakai Splunk
+
+#### Mempersiapkan Splunk:
+1. **Instalasi**:
+   - Pertama, lakukan instalasi Splunk pada sistem operasi yang Anda gunakan.
+
+#### Mengoperasikan Splunk:
+2. **Memasukkan Data**:
+   - Gunakan "Universal Forwarder" untuk mengirim data ke Splunk Cloud atau ikuti tutorial khusus untuk Linux dan Windows untuk memasukkan data ke Splunk Enterprise.
+   
+3. **Pencarian Data**:
+   - Belajar melakukan pencarian dasar di Splunk yang menjelaskan tentang penggunaan kata kunci, bidang, dan boolean untuk mendapatkan wawasan cepat dari data Anda.
+
+4. **Visualisasi dan Dashboard**:
+   - Membuat dashboard dengan panel multipel di Splunk Enterprise untuk memvisualisasikan data.
+
+#### Penyempurnaan dan Referensi Tambahan:
+5. **Analisis dan Visualisasi Data**:
+   - Splunk adalah alat yang kuat untuk mengumpulkan, menganalisis, dan memvisualisasikan data dari berbagai sumber. Anda bisa memonitor, mencari, menganalisis, dan memvisualisasikan data yang dihasilkan mesin secara real time menggunakan Splunk.
+   
+6. **Referensi Cepat dan Tutorial Lainnya**:
+   - Splunk menyediakan Panduan Referensi Cepat yang berisi konsep pencarian fundamental, perintah, fungsi, dan contoh.
+   - Selain itu, terdapat berbagai tutorial, panduan, dan buku yang bisa membantu Anda memahami dan menggunakan Splunk lebih lanjut.
+
+#### Referensi:
+1. [Splunk Tutorial: Getting Started Using Splunk. Splunk.](https://www.splunk.com/en_us/blog/tips-and-tricks/splunk-tutorial-getting-started-using-splunk.html).
+2. [Beginner’s Guide to Splunk. Splunkable. ](https://splunkable.com/beginners-guide-to-splunk/).
+3. [Splunk Tutorial for Beginners: What is Splunk Tool? How to Use? Guru99. ](https://www.guru99.com/splunk-tutorial.html).
+4. [Splunk Quick Reference Guide. Splunk Documentation. k](https://docs.splunk.com/Documentation/Splunk/latest/SearchReference/SearchCheatsheet).
+5. [Splunk Tutorial: Getting Started Using Splunk. Splunk. ](https://www.splunk.com/en_us/blog/tips-and-tricks/splunk-tutorial-getting-started-using-splunk.html).
+
 ## Kibana
 
 Kibana adalah alat visualisasi dan eksplorasi data open-source yang digunakan untuk analisis log dan time-series, pemantauan aplikasi, dan kasus penggunaan intelijen operasional. Kibana menawarkan fitur yang kuat dan mudah digunakan seperti histogram, grafik garis, diagram lingkaran, dan dukungan geospasial built-in dan menyediakan integrasi ketat dengan Elasticsearch, analitik populer dan mesin pencari, yang membuat Kibana menjadi pilihan default untuk memvisualisasikan data yang disimpan dalam Elasticsearch.
@@ -155,3 +186,4 @@ Buka http://localhost:3000/ untuk masuk ke dashboard Grafana. Login dengan usern
 
 - [Mengenal Grafana Aplikasi Web](https://halovina.com/mengenal-grafana-aplikasi-web-visualisasi-interaktif/)
 - [Gravana vs Kibana](https://www.geeksforgeeks.org/grafana-vs-kibana/)
+
