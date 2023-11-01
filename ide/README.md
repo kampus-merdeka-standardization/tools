@@ -2,9 +2,9 @@
 
 ## JetBrains
 
-JetBrains adalah vendor perangkat lunak canggih yang mengkhususkan diri dalam pembuatan alat pengembangan cerdas, termasuk IntelliJ IDEA - IDE Java terkemuka, dan bahasa pemrograman Kotlin. Mereka membangun perangkat lunak mereka agar Anda dapat menikmati membangun perangkat lunak Anda¹. JetBrains menyediakan berbagai alat dan integrasi untuk setiap tim. 
+JetBrains adalah vendor perangkat lunak canggih yang mengkhususkan diri dalam pembuatan alat pengembangan cerdas, termasuk IntelliJ IDEA - IDE Java terkemuka, dan bahasa pemrograman Kotlin. Mereka membangun perangkat lunak mereka agar Anda dapat menikmati membangun perangkat lunak Anda. JetBrains menyediakan berbagai alat dan integrasi untuk setiap tim. 
 
-JetBrains juga menawarkan "All Products Pack" yang memberikan akses ke semua alat desktop JetBrains termasuk 10 IDE, 3 ekstensi, dan 2 profiler. Ini memberikan fleksibilitas untuk menggunakan alat yang berbeda untuk proyek yang berbeda pada beberapa mesin sesuai kebutuhan Anda².
+JetBrains juga menawarkan "All Products Pack" yang memberikan akses ke semua alat desktop JetBrains termasuk 10 IDE, 3 ekstensi, dan 2 profiler. Ini memberikan fleksibilitas untuk menggunakan alat yang berbeda untuk proyek yang berbeda pada beberapa mesin sesuai kebutuhan Anda.
 
 Banyak perusahaan dan individu paling dinamis di dunia menemukan bahwa alat JetBrains membuat mereka lebih kreatif dan efektif.
 
@@ -19,7 +19,7 @@ Berikut merupakan kelebihan dari beberapa IDE produk JetBrains
 1. **IntelliJ IDEA**:
     - Mendukung berbagai fitur code completion yang membantu dalam penulisan kode dengan cepat.
     - Integrasi refactoring yang memudahkan dalam mengurangi kesalahan saat mengubah proyek.
-    - Mendukung beberapa alat build seperti Gulp, Webpack, Grunt, Ant, Maven, SBT, Gradle, NPM¹.
+    - Mendukung beberapa alat build seperti Gulp, Webpack, Grunt, Ant, Maven, SBT, Gradle, NPM.
     - Memiliki decompiler dengan pengaturan default yang digunakan untuk Java Classes.
     - referensi :
       - [Mengenal Apa itu IntelliJ IDEA : Keunggulan, Kelemahan dan Cara Kerjanya - IDCloudHost](https://idcloudhost.com/blog/mengenal-apa-itu-intellij-idea-keunggulan-kelemahan-dan-cara-kerjanya/)
@@ -27,33 +27,33 @@ Berikut merupakan kelebihan dari beberapa IDE produk JetBrains
       - [Berkenalan Dengan IntelliJ IDEA - Dicoding Blog](https://www.dicoding.com/blog/berkenalan-dengan-intellij-idea/)
 
 2. **PyCharm**:
-    - PyCharm adalah cara produktif dalam pengembangan Python⁵.
+    - PyCharm adalah cara produktif dalam pengembangan Python.
     - Memungkinkan untuk melihat seluruh kode sumber Python dengan satu klik.
     - Tersedia berbagai plugin.
     - Mudah digunakan.
     - Dukungan komunitas yang kuat.
-    - Memfasilitasi pengembangan kode yang lebih cepat⁵.
+    - Memfasilitasi pengembangan kode yang lebih cepat.
     - referensi :
       - [Apa itu PyCharm? Mengenal PyCharm Python, Kekurangan, serta Kelebihannya](https://appkey.id/pembuatan-aplikasi/mobile-programming/pycharm-python/)
 
 3. **WebStorm**:
     - Menyediakan banyak fitur seperti editor teks yang digunakan untuk menulis kode.
-    - Alat yang mengotomatisasi proses build pada program dan debugger membantu mendeteksi serta memperbaiki kesalahan program¹².
+    - Alat yang mengotomatisasi proses build pada program dan debugger membantu mendeteksi serta memperbaiki kesalahan program.
     - Pengalaman "out-of-the-box". Seperti IDE profesional lainnya, WebStorm dilengkapi dengan semua fungsi inti yang diperlukan sehingga Anda dapat langsung mulai coding tanpa harus menginstal ekstensi tambahan.
     - referensi :
       -   [WebStorm: The Smartest JavaScript IDE, by JetBrains](https://www.jetbrains.com/webstorm/)
       - [WebStorm FAQ – IDEs Support (IntelliJ Platform) | JetBrains](https://intellij-support.jetbrains.com/hc/en-us/articles/8095193602962-WebStorm-FAQ)
 
 4. **PhpStorm**:
-    - Kompatibel dengan berbagai versi PHP¹³.
-    - Fitur otomatisasi penyelesaian kode untuk PHP, kelas, metode, variabel, kata kunci, dan nama umum untuk variabel berdasarkan tipe¹³.
-    - Mendukung gaya pengkodean (PSR1 / PSR2, Drupal, Symfony, Zend)¹³.
+    - Kompatibel dengan berbagai versi PHP.
+    - Fitur otomatisasi penyelesaian kode untuk PHP, kelas, metode, variabel, kata kunci, dan nama umum untuk variabel berdasarkan tipe.
+    - Mendukung gaya pengkodean (PSR1 / PSR2, Drupal, Symfony, Zend).
     - Menulis kode tanpa error lebih cepat dengan penyelesaian kode yang cerdas dan inspeksi kode yang pintar.
     - referensi : 
       - [PhpStorm, IDE yang sangat baik untuk PHP lintas platform | Pecandu Linux](https://www.linuxadictos.com/id/phpstorm-ide-yang-sangat-baik-untuk-php-lintas-platform.html)
 
 5. **DataGrip**:
-    - Menyediakan penyelesaian kode cerdas, inspeksi kode, penyorotan kesalahan real-time, perbaikan cepat, dan kemampuan refactoring²³.
+    - Menyediakan penyelesaian kode cerdas, inspeksi kode, penyorotan kesalahan real-time, perbaikan cepat, dan kemampuan refactoring.
     - Menghemat waktu dengan membuat proses penulisan kode SQL lebih efisien.
     - referensi :
       - [Features and Screenshots - DataGrip](https://www.jetbrains.com/datagrip/features/)
@@ -70,7 +70,7 @@ Berikut merupakan kelebihan dari beberapa IDE produk JetBrains
       - [AppCode: Smart Swift/Objective-C IDE for iOS & macOS Development](https://www.jetbrains.com/objc/)
 
 8. **RubyMine**:
-    - Menyediakan berbagai fitur berguna untuk bekerja dengan kode sumber, mulai dari pengeditan kode dasar, navigasi cerdas, hingga debugging aplikasi jarak jauh³³.
+    - Menyediakan berbagai fitur berguna untuk bekerja dengan kode sumber, mulai dari pengeditan kode dasar, navigasi cerdas, hingga debugging aplikasi jarak jauh.
     - Menulis kode tanpa error lebih cepat dengan penyelesaian kode yang cerdas dan inspeksi kode yang pintar.
     - referensi :
       - [Learn RubyMine with IDE Features Trainer | The RubyMine Blog](https://blog.jetbrains.com/ruby/2019/05/learn-rubymine-with-ide-features-trainer/)

@@ -68,7 +68,7 @@ Berikut adalah beberapa langkah untuk menggunakan PMD:
 
 3. **Integrasi dengan IDE**: PMD dapat diintegrasikan sebagai inspeksi dalam IDE seperti [IntelliJ](https://plugins.jetbrains.com/plugin/15412-pmd-idea), sehingga file yang sedang dibuka dapat dipindai "_on the fly_". Selain Intellij Idea, PMD juga dapat diintegrasikan dengan IDE lainnya, seperti pada VSCode, kita bisa mencari ekstensi "PMD" lalu install
 
-4. **Pemindaian Kode**: Anda dapat menjalankan kode Anda melalui linter dan mendapatkan pemberitahuan dini tentang kesalahan pemrograman, bug, kesalahan gaya dan format, dan entri yang mencurigakan¹.
+4. **Pemindaian Kode**: Anda dapat menjalankan kode Anda melalui linter dan mendapatkan pemberitahuan dini tentang kesalahan pemrograman, bug, kesalahan gaya dan format, dan entri yang mencurigakan.
 
 5. **Perbaikan Cepat**: Untuk beberapa aturan umum, perbaikan cepat tersedia⁸.
 
