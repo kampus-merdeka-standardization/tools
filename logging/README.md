@@ -56,7 +56,7 @@ Referensi:
 
 #### Kelebihan:
 1. **Pengolahan Data dalam Skala Besar:** Splunk mampu mengonsumsi dan memproses volume data jaringan, server, keamanan siber, dan event aplikasi yang besar, menampilkan data tersebut untuk analisis yang mudah.
-2. **Pemantauan Real-Time:** Splunk memungkinkan pemantauan data dalam real-time, yang sangat penting untuk mendeteksi masalah secepat mungkin dan merespons insiden keamanan【215†edtech】.
+2. **Pemantauan Real-Time:** Splunk memungkinkan pemantauan data dalam real-time, yang sangat penting untuk mendeteksi masalah secepat mungkin dan merespons insiden keamanan.
 3. **Analisis Data:** Splunk menawarkan kemampuan analisis data yang kuat, termasuk pencarian, pelaporan, dan visualisasi data, untuk membantu organisasi mendapatkan wawasan dari data mereka.
 4. **Alat Manajemen Keamanan dan Insiden (SIEM):** Splunk juga berfungsi sebagai alat Manajemen Insiden dan Keamanan (SIEM) penuh, dengan kemampuan untuk memantau lalu lintas jaringan dan memberi peringatan kepada administrator berdasarkan ambang batas dan pengaturan yang disesuaikan.
 5. **Ekstensibilitas:** Splunk memiliki ekstensibilitas tinggi dengan adanya add-ons dan aplikasi yang dapat membantu meningkatkan fungsionalitasnya.

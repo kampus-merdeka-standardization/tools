@@ -107,7 +107,7 @@ Yarn adalah sebuah manajer dependensi yang cepat, dapat diandalkan, dan aman yan
    - Dependensi yang dideklarasikan dalam berkas `package.json` dan berkas kunci `yarn.lock` yang menjamin konsistensi dependensi di seluruh lingkungan dan tim pengembangan.
 
 2. **Caching:**
-   - Yarn mencache setiap paket yang telah diunduh, sehingga tidak perlu mengunduh paket yang sama lagi di masa mendatang. Ini berarti instalasi yang lebih cepat bahkan pada instalasi ulang atau di mesin lain yang memiliki cache yang sama【280†(npm)】.
+   - Yarn mencache setiap paket yang telah diunduh, sehingga tidak perlu mengunduh paket yang sama lagi di masa mendatang. Ini berarti instalasi yang lebih cepat bahkan pada instalasi ulang atau di mesin lain yang memiliki cache yang sama.
 
 3. **Resolusi Versi:**
    - Yarn memiliki algoritma resolusi yang kuat yang bekerja untuk menyelesaikan konflik versi dependensi dan memastikan versi yang benar dari setiap paket diinstal di proyek Anda.
@@ -287,7 +287,7 @@ Untuk Linux, anda dapat melihat [dokumentasi resmi Yarn](https://classic.yarnpkg
 Mohon dicatat bahwa terdapat dua versi dari Yarn: Yarn Classic dan Yarn Berry. Link di atas adalah untuk Yarn Classic. Jika anda ingin menggunakan Yarn Berry, anda dapat mengikuti panduan instalasi dari [situs resmi Yarn Berry](https://yarnpkg.com/getting-started/install).
 
 ### Referensi:
-- [Installasi Yarn di macOS](https://tecadmin.net/install-yarn-macos/)【293†source】
+- [Installasi Yarn di macOS](https://tecadmin.net/install-yarn-macos/)
 - [Dokumentasi Resmi Yarn](https://classic.yarnpkg.com/en/docs/install)
 
 ## Composer
